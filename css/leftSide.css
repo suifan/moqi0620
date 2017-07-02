@@ -360,8 +360,8 @@ span.span-active {
     font-size: .8vw;
 }
 .per-top>div {
-    height: 13vw;
-    padding: 0 1vw;
+    height: 12.6vw;
+    padding: 0 1.4vw;
     float: left;
     line-height: 1.4vw;
 }
@@ -410,7 +410,7 @@ span.span-active {
 }
 /*checkbox组件样式---end*/
 .per-btm,.per-mid {
-    margin-top: 1vw;
+    margin-top: .7vw;
 }
 
 .per-btm article p{
@@ -514,13 +514,22 @@ span.span-active {
 }
 .per-lefttop p {
     text-align: center;
-    margin-top: 0.6vw;
+    margin-top: 0.4vw;
+}
+.per-lefttop .name {
+    font-size: 1vw;
 }
 .per-leftmid ul {
     margin-top: 1.2vw;
 }
 .per-leftbtm ul {
     margin-top: 1.2vw;
+}
+.per-leftbtm .btn {
+    text-align: center;
+    background: #4c86f1;
+    margin-top: .6vw;
+    cursor: pointer;
 }
 .physexam-record {
     width: 100%;
@@ -558,8 +567,27 @@ span.span-active {
     border: none;
 }
 .family-list {
-    margin-top: 1vw;
+    margin-top: .5  vw;
     overflow: hidden;
+}
+/*扶贫卡家庭成员切换*/
+.family-list.horizontal>div {
+    float: left;
+}
+.family-list.horizontal .button {
+    width: 4%;
+    background: red;
+    height: 5.6vw;
+}
+.family-list.horizontal li {
+    width: 24.4%;
+    height: 5.6vw;
+    background: #fff;
+    margin: 0;
+    cursor: auto;
+}
+.horizontal .list-wrapper {
+    width: 92%;
 }
 /*扶贫卡 五人小组名单*/
 .five-list>div {

@@ -13,7 +13,8 @@
             "progressBar": "../js/progressBar",
             "countDown": "../js/countDown",
             "page": "../js/page",
-            "viewer": "../lib/viewer"
+            "viewer": "../lib/viewer",
+            "marquee": "../lib/Marquee"
         },
         shim: {
             'jbox': {
@@ -25,12 +26,16 @@
             'viewer': {
                 deps: ['jquery'],
                 exports: "jQuery.fn.viewer"
+            },
+            'marquee': {
+                deps: ['jquery'],
+                exports: "jQuery.fn.kxbdSuperMarquee"
             }
 
         }
     });
 
-    require(['jquery', 'migrate', 'template', 'chart', 'charts', 'jbox', 'progressBar', 'countDown', 'viewer', 'page'], function($, migrate, template, chart, charts, jbox, progressBar, countDown, viewer, jpage) {
+    require(['jquery', 'migrate', 'template', 'chart', 'charts', 'jbox', 'progressBar', 'countDown', 'viewer', 'page','marquee'], function($, migrate, template, chart, charts, jbox, progressBar, countDown, viewer, jpage) {
         //当前所选区域对应的全局变量
         var area = "moqi";
         var area_name = "";
@@ -1225,7 +1230,7 @@
                     // var area = "西瓦尔图镇";
                     // var curr_path_name = "兴隆村";
                     //请求贫困家庭列表数据
-                     if (text == "健康扶贫") {
+                     if (text == "首页") {
                         if(event.target.parentNode.id=="shenglicun"){
                              $(".map-links").html(template("villageClickTemp", {}))
                              .css({
@@ -1252,7 +1257,7 @@
                             getHouseList(data,mapApi.curr_path_name);
                             // console.log(data);
                         });
-                    } else if (text == "首页") {
+                    } else if (text == "首页11111111111***********************") {
                         if(event.target.parentNode.id=="shenglicun"){
                              $(".map-links").html(template("villageClickTemp", {}))
                              .css({
@@ -1407,7 +1412,7 @@
                             var $pop = $.jBox('', { title: name, buttons: {}, border: 0, opacity: 0.4 });
                             document.getElementsByTagName('body')[0].style.padding = "0";
                             $pop.find("#jbox").css("top", "2.6vw");
-                            if (text == "健康扶贫") {
+                            if (text == "首页") {
                                 getHelpPoor(userId, 1);
                                 //绑定图片放大事件
                                 $(".physexam-record img").viewer();
@@ -1422,7 +1427,7 @@
                                     //绑定图片放大事件
                                     $popOther.find(".physexam-record img").viewer();
                                 })
-                            } else if (text == "首页") {
+                            } else if (text == "首页111111111111111111") {
                                 console.log(userId);
 
                                 $.get("http://moqi.test.grdoc.org/api/people/detail?id=" + userId, function(res) {
