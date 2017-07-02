@@ -21,6 +21,15 @@ header{
     width: 100%;
     position: relative;
 }
+header select{
+    position: absolute;
+    right: 7vw;
+    top: 2.5vw;
+    width: 8vw;
+    background-color: rgba(27,135,253,.5);
+    color: #8bd2fc;
+    border: 1px solid #003064;
+}
 .mainTitle{
     color: #fff;
     font-size: 1.5vw;
@@ -54,7 +63,7 @@ header{
     padding: .5vw 1vw .5vw 1vw;
     font-size: 1.1vw;
     cursor: pointer;
-    margin-left: 1.5vw;
+    margin-left: 1vw;
     font-weight: lighter;
 }
 #tab li:first-child{
@@ -140,11 +149,19 @@ header{
 }
 
 .section .header{
-    /*background: rgba(72, 153, 241, 0.25);*/
-    /*border: 1px solid #43738e;*/
+    padding-top: 1.4vw;
+    line-height: 1.5vw;
 }
 .section .content{
     padding:.8vw;
+}
+.section select{
+    background-color: #1b9deb;
+    color: #fff;
+    border: none;
+    width: 4vw;
+    background-position: 2.8vw -1.5vw;
+    background-size: 51%;
 }
 .section .section-body,.section .content{
     /*background: rgba(3, 19, 39, 0.52);*/
@@ -163,11 +180,18 @@ header{
 color: #eceef3;
     font-weight: normal;
     font-size: 1.1vw;
-    margin-top: 1.4vw;
     margin-left: 1vw;
     border-left: 3px solid #1b9deb;
     padding-left: 8px;
 }
+section .header .orange_title{
+    border-color: #ec6941;
+}
+
+section .header .green_title{
+    border-color: #8fc31f;
+}
+
 img{
     width:94%;
     margin:3%;
@@ -250,7 +274,7 @@ img{
     height: .6vw;
 }
 .progressBar .progressBarBg{
-    background: rgba(255,255,255,.1);
+    background: #c1c1c1;
     height: 100%;
     width: 100%;
     border-radius: 5vw;
@@ -276,26 +300,32 @@ img{
 
 /*蓝色*/
 .progressBar.pg_blue .progressBarBar{
-    background:-webkit-linear-gradient(top,#169eee,#0b5fb9);
+    background:#1b9deb;
 }
 /*红色*/
-/*.progressBar.pg_red .progressBarBar{
+.progressBar.pg_red .progressBarBar{
     background: -webkit-linear-gradient(top,#cf5353,#a21a1c);
 }
-!*橙色*!
+/*橙色*/
 .progressBar.pg_orange .progressBarBar{
-    background: -webkit-linear-gradient(top,#e68769,#b73815);
+    background: #f19149;
 }
-!*绿色*!
+/*绿色*/
 .progressBar.pg_green .progressBarBar{
-    background: -webkit-linear-gradient(top,#b0d25a,#77a51f);
-
+    background: #74db46;
 }
-!*青色*!
+/*青色*/
 .progressBar.pg_light_blue .progressBarBar{
-    background: -webkit-linear-gradient(top,#1bf9cd,#14ae8c);
-
-}*/
+    background: #46dbdb;
+}
+/*深黄*/
+.progressBar.pg_dark_yellow .progressBarBar{
+    background:#ffb400;
+}
+/*浅黄*/
+.progressBar.pg_yellow .progressBarBar{
+    background:#ffff00;
+}
 /*进度条 end*/
 
 /*表格 start*/
@@ -506,6 +536,19 @@ ul.page {
 
 .jbox-close {
     z-index:100;
+}
+
+select {
+    border: solid 1px #000;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/select_bg.png) no-repeat 6.3vw .3vw;
+    padding-right: 14px;
+    padding-left: .2vw;
+    padding: .2vw 14px .2vw .2vw;
+    background-size: 23%;
+    border-radius: .3vw;
 }
 
 
