@@ -394,7 +394,7 @@ table.blueTable tbody tr:last-child td{
 }
 #jbox-content {
     width: 76vw;
-    padding: 1.6vw 0;
+    padding: 1.2vw 0;
     background: #0e1a33;
     text-align: left;
 }
@@ -552,8 +552,19 @@ select {
 }
 
 
+.section .header .red-Border{
+  border-left: 3px solid #F00;
+}
 
-
+.section .header .green-Border{
+  border-left: 3px solid #00FF00;
+}
+.section .header .blue-Border{
+  border-left: 3px solid #F00;
+}
+.section .header .yellow-Border{
+  border-left: 3px solid #F29E27;
+}
 
 
 

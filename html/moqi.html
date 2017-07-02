@@ -3648,7 +3648,7 @@
     </div>
     <div class="tuopin-right" id="poorChart"></div>
 </script>
-<!--个人中心弹窗模板-->
+<!--个人中心弹窗模板（贫困卡）-->
 <script id = "personalTemp" type="text/html">
     <div class="per-left">
         <div class="per-top">
@@ -3779,7 +3779,7 @@
         </section>
     </div>
 </script>
-<!--扶贫卡模板-->
+<!--健康卡模板-->
 <script id = "helpCardTemp" type="text/html">
     <div class="per-left">
         <div class="per-top">
@@ -3795,63 +3795,72 @@
                     <img src="">
                 </div>
                 {{/if}}
-                <!--<p>{{name}}</p>-->
+                <p class="name">{{name}}</p>
+                <p>年收入（元）</p>
+                <p class="annual-money">{{"222222"}}</p>
             </div>
             <div class="per-leftmid">
                 <ul>
-                    <li>姓名：<span>{{name}}</span>&nbsp;&nbsp;&nbsp;性别：{{gender}}</li>
-                    <li>年龄：<span>{{age}}</span></li>
-                    <li>住址：<span>{{address}}</span></li>
-                    <li>类别：<span>{{level}}</span></li>
-                    {{each illness as ill}}
-                        <li style="height: .6vw;"></li>
-                        <li>疾病名称：<span>{{ill.name}}</span></li>
-                        <li>计划救治年份：<span>{{ill.aim_date?ill.aim_date:2017}}</span></li>
-                        <li>救治情况：<span>{{ill.help_status}}</span></li>
-                    {{/each}}
+                    <li>性别：{{gender}}</li>
+                    <li>民族：{{gender}}</li>
+                    <li>所属村：<span>{{age}}</span></li>
+                    <li>健康状况：<span>{{"长期慢性病"}}</span></li>
+                    <li>主要贫困原因：<span>{{"因病"}}</span></li>
+                    <li>身份证号：<span>{{idnum}}</span></li>
+                    <li>银行卡号：<span>{{idnum}}</span></li>
                 </ul>
             </div>
             <div class="per-leftbtm">
                 <ul>
-                    <li>身份证号：<span>{{idnum}}</span></li>
+                    <li>劳动能力：<span>{{"普通劳动力"}}</span></li>
                     <li>手机号：<span>{{phone}}</span></li>
-                    <li>脱贫属性：<span>{{poverty_over_property}}</span></li>
-                    <li>家庭人数：<span>{{people_num}}</span></li>
-                    {{each illness as ill}}
-                        <li style="height: .6vw;"></li>
-                        <li>诊断机构：<span>{{ill.diagnose_hospital}}</span></li>
-                        <li>治疗机构：<span>{{ill.help_hospital}}</span></li>
-                        <li>治疗情况：<span>{{ill.illness_status}}</span></li>
-                    {{/each}}
+                    <li>家庭成员：<span>{{people_num}}</span></li>
+                    <li>贫困属性：<span>{{"低保贫困户"}}</span></li>
+                    <li class="btn"><span>进入贫困卡</span></li>
+                    <li class="btn"><span>查看详细信息</span></li>
                 </ul>
             </div>
         </div>
         <div class="per-mid">
-            <p class="per-title">家庭成员</p>
+            <p class="per-title">家庭成员({{8}}位)</p>
             <div style="width: 100%; background: #fff; height:3px;"></div>
-            <div class="family-list">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>姓名</th>
-                        <th>性别</th>
-                        <th>与户主关系</th>
-                        <th>联系电话</th>
-                        <th>疾病情况</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {{each members as mem}}
-                    <tr id = "{{mem.id}}">
-                        <td>{{mem.name}}</td>
-                        <td>{{mem.gender}}</td>
-                        <td>{{mem.relation}}</td>
-                        <td>{{mem.phone}}</td>
-                        <td>{{mem.health}}</td>
-                    </tr>
-                    {{/each}}
-                    </tbody>
-                </table>
+            <div class="family-list horizontal">
+                <div id="leftBtn" class="button"><img src="" alt=""></div>
+                <div id = "familyMem" class="list-wrapper">
+                    <ul>
+                        <li class="active">
+                            <div class="avatar"><img src="" alt=""></div>
+                            <div><span>{{"张三丰"}}</span><span>{{"户主"}}</span></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                            <div><span>{{"张三丰"}}</span><span>{{"户主"}}</span></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                            <div><span>{{"张三丰"}}</span><span>{{"户主"}}</span></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                            <div><span>{{"张三丰"}}</span><span>{{"户主"}}</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="rightBtn" class="button"><img src="" alt=""></div>
+            </div>
+            <div class="family-mem-info">
+                <div class="item">姓名：{{"张三丰"}}</div>
+                <div class="item">家庭住址：{{"北京市朝阳区八里庄街道晨练中心256号楼"}}</div>
+                <div class="item">身份证：{{146736767483736256}}</div>
+                <div class="item">民族：{{"汉"}}</div>
+                <div class="item last">户人口：{{5}}</div>
+                <div class="item">健康状况：{{"长期慢性病"}}</div>
+                <div class="item">劳动能力：{{"普通"}}</div>
+                <div class="item last">文化程度：{{"小学"}}</div>
+                <div class="item">务工时间：{{"3个月"}}</div>
+                <div class="item">工作种类：{{"普通工人"}}</div>
+                <div class="item last">工作状态：{{"务工/在校生"}}</div>
+                <div class="item"></div>
             </div>
         </div>
         <div class="per-btm">
