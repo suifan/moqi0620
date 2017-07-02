@@ -99,7 +99,7 @@ module.exports = function(grunt) {
                 server: {
                     options: {
                       open: true,
-                      base: ['../static/']
+                      base: ['../moqi0620/']
                     }
                 }
             },
