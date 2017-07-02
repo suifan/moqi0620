@@ -68,9 +68,9 @@
         var api = {
             'getHomePage': function() {
                 //右侧--------------------start
-                $.getJSON("../js/json/homePage/dutyHost.json", function(data) {
-                    if (data) {
-                        $('#rightSide').html(template('homepageRightSideTemp', data[area]));
+                // $.getJSON("../js/json/homePage/dutyHost.json", function(data) {
+                    // if (data) {
+                        $('#rightSide').html(template('homepageRightSideTemp', {}));
                         //进度条生成
                         $("#performance").find(".progressBar").each(function() {
                             var percent = $(this).find(".progressRate").text();
@@ -79,10 +79,10 @@
                             }
                             progressBar.generate($(this), percent);
                         });
-                    }
+                    // }
                     $(".command").viewer();
                     $(".management").viewer();
-                })
+                // })
                 $("#rightSide").on("click", "div", function() {
                     if ($(this).attr("id") == "performance") {
                         $(".government").trigger("click");

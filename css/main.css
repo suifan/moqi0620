@@ -153,7 +153,7 @@ header select{
     line-height: 1.5vw;
 }
 .section .content{
-    padding:.8vw;
+    padding: 1.3vw;
 }
 .section select{
     background-color: #1b9deb;
@@ -180,15 +180,15 @@ header select{
 color: #eceef3;
     font-weight: normal;
     font-size: 1.1vw;
-    margin-left: 1vw;
+    margin-left: .7vw;
     border-left: 3px solid #1b9deb;
     padding-left: 8px;
 }
-section .header .orange_title{
+.section .header .orange_title{
     border-color: #ec6941;
 }
 
-section .header .green_title{
+.section .header .green_title{
     border-color: #8fc31f;
 }
 
@@ -271,7 +271,7 @@ img{
     display: inline-block;
     position: relative;
     width: 4.5vw;
-    height: .6vw;
+    height: .4vw;
 }
 .progressBar .progressBarBg{
     background: #c1c1c1;
@@ -567,6 +567,32 @@ select {
 }
 
 
+
+
+/*蓝色*/
+.blue{
+    color:#1b9deb;
+}
+/*橙色*/
+.orange{
+    color: #f19149;
+}
+/*绿色*/
+.green{
+    color: #74db46;
+}
+/*青色*/
+.light_blue{
+    color: #46dbdb;
+}
+/*深黄*/
+.dark_yellow{
+    color:#ffb400;
+}
+/*浅黄*/
+.yellow{
+    color:#ffff00;
+}
 
 
 

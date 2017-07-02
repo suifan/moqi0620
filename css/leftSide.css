@@ -1027,3 +1027,11 @@ table tr:nth-child(even) td{
     float:right;
     margin-right: 1vw;
 }
+
+.special_progress .progressBar{
+   width: 15.2vw;
+}
+.special_progress .content>div{
+    height: 2.3vw;
+    line-height: 2.3vw;
+}
