@@ -105,7 +105,7 @@ module.exports = function(grunt) {
             },
     watch: {
         options: {
-          livereload: '<%=connect.options.livereload%>'  //监听前面声明的端口  35729
+          livereload: '<%=connect.options.livereload%>'  //监听前面声明的端口     35729
         },
         scripts: {
           options:{
