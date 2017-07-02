@@ -1,0 +1,1989 @@
+{
+    "阿尔拉镇": [
+        {
+            "village": "阿尔拉村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "7000"
+        },
+        {
+            "village": "宝龙村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "4000"
+        },
+        {
+            "village": "伯尔科村委会",
+            "num": "5",
+            "primary": "4",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "14000"
+        },
+        {
+            "village": "喀牙都尔本村委会",
+            "num": "2",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7000"
+        },
+        {
+            "village": "奎力浅村委会",
+            "num": "10",
+            "primary": "4",
+            "junior_middle": "4",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "40000"
+        },
+        {
+            "village": "拉力浅村委会",
+            "num": "5",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "21000"
+        },
+        {
+            "village": "马当浅村委会",
+            "num": "4",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "2",
+            "amount": "7500"
+        },
+        {
+            "village": "马克勒村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7500"
+        }
+    ],
+    "巴彦鄂温克民族乡": [
+        {
+            "village": "巴彦街村委会",
+            "num": "2",
+            "primary": "1",
+            "juniyaor_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "8500"
+        },
+        {
+            "village": "达尔滨村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "8500"
+        },
+        {
+            "village": "达拉滨村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "葛根台村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "8500"
+        },
+        {
+            "village": "良田村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "龙泉村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "4000"
+        },
+        {
+            "village": "满都胡浅",
+            "num": "4",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "2",
+            "amount": "7500"
+        },
+        {
+            "village": "平安村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "清泉村委会",
+            "num": "3",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "14000"
+        },
+        {
+            "village": "萨玛街村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "13500"
+        },
+        {
+            "village": "三合发村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "15500"
+        },
+        {
+            "village": "石头沟村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "同心村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "13500"
+        },
+        {
+            "village": "乌如根塔拉村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11500"
+        },
+        {
+            "village": "兴农村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "友良村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "讷莫日浅村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        }
+    ],
+    "宝山镇": [
+        {
+            "village": "宝龙泉村委会",
+            "num": "3",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "10500"
+        },
+        {
+            "village": "宝山村委会",
+            "num": "7",
+            "primary": "2",
+            "junior_middle": "5",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "27000"
+        },
+        {
+            "village": "宝山社区居民委员会",
+            "num": "5",
+            "primary": "2",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "15000"
+        },
+        {
+            "village": "福德村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "7500"
+        },
+        {
+            "village": "福民村委会",
+            "num": "5",
+            "primary": "1",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "2",
+            "amount": "11500"
+        },
+        {
+            "village": "福兴村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "9000"
+        },
+        {
+            "village": "后福民村委会",
+            "num": "27",
+            "primary": "13",
+            "junior_middle": "9",
+            "senior_middle": "3",
+            "high": "2",
+            "amount": "96500"
+        },
+        {
+            "village": "贾气口子村委会",
+            "num": "7",
+            "primary": "3",
+            "junior_middle": "2",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "23500"
+        },
+        {
+            "village": "巨泉山村委会",
+            "num": "8",
+            "primary": "4",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "2",
+            "amount": "23000"
+        },
+        {
+            "village": "太平川村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "太平岗村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "太平桥村委会",
+            "num": "4",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "11000"
+        },
+        {
+            "village": "太裕春村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "4000"
+        },
+        {
+            "village": "万发村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "五家子村委会",
+            "num": "4",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "12500"
+        },
+        {
+            "village": "五马架村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "7000"
+        },
+        {
+            "village": "西宝山村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "小泉子村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "4000"
+        },
+        {
+            "village": "兴安村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "5000"
+        }
+    ],
+    "登特科办事处": [
+        {
+            "village": "阿彦浅村委会",
+            "num": "10",
+            "primary": "5",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "3",
+            "amount": "25500"
+        },
+        {
+            "village": "安民村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "白桦山村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "0"
+        },
+        {
+            "village": "北石场村委会",
+            "num": "6",
+            "primary": "1",
+            "junior_middle": "2",
+            "senior_middle": "2",
+            "high": "1",
+            "amount": "21500"
+        },
+        {
+            "village": "长发村委会",
+            "num": "9",
+            "primary": "5",
+            "junior_middle": "1",
+            "senior_middle": "2",
+            "high": "1",
+            "amount": "31500"
+        },
+        {
+            "village": "登特科村委会",
+            "num": "29",
+            "primary": "22",
+            "junior_middle": "5",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "102000"
+        },
+        {
+            "village": "多西浅村委会",
+            "num": "19",
+            "primary": "14",
+            "junior_middle": "4",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "65000"
+        },
+        {
+            "village": "钢铁村委会",
+            "num": "8",
+            "primary": "5",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "26500"
+        },
+        {
+            "village": "郭尼村委会",
+            "num": "16",
+            "primary": "11",
+            "junior_middle": "3",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "60500"
+        },
+        {
+            "village": "民族村委会",
+            "num": "4",
+            "primary": "4",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14000"
+        }
+    ],
+    "杜拉尔鄂温克民族乡": [
+        {
+            "village": "查哈阳村委会",
+            "num": "4",
+            "primary": "2",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "15000"
+        },
+        {
+            "village": "初鲁格奇村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "杜克塔尔村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "后沃尔奇村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "4000"
+        },
+        {
+            "village": "尼西空海拉尔松村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "前沃尔奇村委会",
+            "num": "6",
+            "primary": "2",
+            "junior_middle": "2",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "20000"
+        },
+        {
+            "village": "特吾浅村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "瓦西格奇村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11500"
+        },
+        {
+            "village": "吾都海拉松村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "西沃尔奇村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        }
+    ],
+    "额尔河办事处": [
+        {
+            "village": "东胜村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "额尔和村委会",
+            "num": "7",
+            "primary": "6",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "25000"
+        },
+        {
+            "village": "蒋屯村委会",
+            "num": "2",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7000"
+        },
+        {
+            "village": "李屯村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "柳屯村委会",
+            "num": "6",
+            "primary": "3",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "18500"
+        },
+        {
+            "village": "平阳村委会",
+            "num": "2",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7000"
+        },
+        {
+            "village": "全胜村委会",
+            "num": "4",
+            "primary": "4",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14000"
+        },
+        {
+            "village": "双河村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "双胜村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "团山子村委会",
+            "num": "3",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "10500"
+        },
+        {
+            "village": "苇塘沟村委会",
+            "num": "6",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "2",
+            "high": "1",
+            "amount": "20500"
+        },
+        {
+            "village": "新胜村委会",
+            "num": "3",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "10500"
+        },
+        {
+            "village": "伊哈里村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "宜和德村委会",
+            "num": "9",
+            "primary": "8",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "32000"
+        }
+    ],
+    "哈达阳镇": [
+        {
+            "village": "哈布奇村委会",
+            "num": "30",
+            "primary": "14",
+            "junior_middle": "10",
+            "senior_middle": "6",
+            "high": "0",
+            "amount": "119000"
+        },
+        {
+            "village": "哈达阳村委会",
+            "num": "23",
+            "primary": "10",
+            "junior_middle": "5",
+            "senior_middle": "3",
+            "high": "5",
+            "amount": "70000"
+        },
+        {
+            "village": "哈列图村委会",
+            "num": "10",
+            "primary": "5",
+            "junior_middle": "5",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "37500"
+        },
+        {
+            "village": "双哈村委会",
+            "num": "8",
+            "primary": "4",
+            "junior_middle": "2",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "32000"
+        },
+        {
+            "village": "小黑山村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        }
+    ],
+    "汉古尔河镇": [
+        {
+            "village": "北坤浅村委会",
+            "num": "7",
+            "primary": "4",
+            "junior_middle": "0",
+            "senior_middle": "3",
+            "high": "0",
+            "amount": "29000"
+        },
+        {
+            "village": "朝阳村委会",
+            "num": "4",
+            "primary": "1",
+            "junior_middle": "2",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "16500"
+        },
+        {
+            "village": "东坤浅村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "东诺敏村委会",
+            "num": "18",
+            "primary": "3",
+            "junior_middle": "5",
+            "senior_middle": "4",
+            "high": "6",
+            "amount": "50500"
+        },
+        {
+            "village": "额尔根浅村委会",
+            "num": "4",
+            "primary": "4",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14000"
+        },
+        {
+            "village": "汉古尔河村委会",
+            "num": "11",
+            "primary": "6",
+            "junior_middle": "3",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "38000"
+        },
+        {
+            "village": "南坤浅村委会",
+            "num": "6",
+            "primary": "4",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "18000"
+        },
+        {
+            "village": "三合村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "12500"
+        },
+        {
+            "village": "胜利村委会",
+            "num": "20",
+            "primary": "12",
+            "junior_middle": "4",
+            "senior_middle": "1",
+            "high": "3",
+            "amount": "63000"
+        },
+        {
+            "village": "乌兰村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "12500"
+        },
+        {
+            "village": "西坤浅村委会",
+            "num": "22",
+            "primary": "15",
+            "junior_middle": "4",
+            "senior_middle": "0",
+            "high": "3",
+            "amount": "68500"
+        },
+        {
+            "village": "西诺敏村委会",
+            "num": "27",
+            "primary": "11",
+            "junior_middle": "4",
+            "senior_middle": "9",
+            "high": "3",
+            "amount": "99500"
+        },
+        {
+            "village": "小都尔本村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        }
+    ],
+    "红彦镇": [
+        {
+            "village": "红升村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "红彦村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "拉抛村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "南阳村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7500"
+        },
+        {
+            "village": "欧富村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "山口村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7500"
+        },
+        {
+            "village": "石头河子村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "水磨沟村委会",
+            "num": "10",
+            "primary": "6",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "2",
+            "amount": "29000"
+        },
+        {
+            "village": "松木哨村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "9000"
+        },
+        {
+            "village": "铁东社区居民委员会",
+            "num": "9",
+            "primary": "4",
+            "junior_middle": "2",
+            "senior_middle": "2",
+            "high": "1",
+            "amount": "32000"
+        },
+        {
+            "village": "铁西社区居民委员会",
+            "num": "8",
+            "primary": "3",
+            "junior_middle": "2",
+            "senior_middle": "2",
+            "high": "1",
+            "amount": "28500"
+        },
+        {
+            "village": "团结村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "新多金村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11500"
+        },
+        {
+            "village": "新哈力浅村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "新立村委会",
+            "num": "11",
+            "primary": "6",
+            "junior_middle": "2",
+            "senior_middle": "1",
+            "high": "2",
+            "amount": "34000"
+        },
+        {
+            "village": "杨木山村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "12000"
+        }
+    ],
+    "库如奇乡": [
+        {
+            "village": "巴格达瓦村委会",
+            "num": "4",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "17000"
+        },
+        {
+            "village": "黑山村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "4000"
+        },
+        {
+            "village": "呼兰韶热村委会",
+            "num": "5",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "20500"
+        },
+        {
+            "village": "库如奇村委会",
+            "num": "12",
+            "primary": "8",
+            "junior_middle": "3",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "45000"
+        },
+        {
+            "village": "库如奇河村委会",
+            "num": "4",
+            "primary": "0",
+            "junior_middle": "2",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "13000"
+        },
+        {
+            "village": "新肯布拉尔村委会",
+            "num": "3",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "2",
+            "amount": "5000"
+        },
+        {
+            "village": "伊威达瓦村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "9000"
+        }
+    ],
+    "奎勒河镇": [
+        {
+            "village": "北方村委会",
+            "num": "9",
+            "primary": "7",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "33500"
+        },
+        {
+            "village": "北兴村委会",
+            "num": "9",
+            "primary": "5",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "2",
+            "amount": "25500"
+        },
+        {
+            "village": "富强村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "合力村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "8500"
+        },
+        {
+            "village": "奎勒河村委会",
+            "num": "8",
+            "primary": "6",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "29000"
+        },
+        {
+            "village": "奎勒河社区居民委员会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "利民村委会",
+            "num": "6",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "3",
+            "amount": "11000"
+        },
+        {
+            "village": "龙山村委会",
+            "num": "8",
+            "primary": "4",
+            "junior_middle": "1",
+            "senior_middle": "3",
+            "high": "0",
+            "amount": "33000"
+        },
+        {
+            "village": "乾安村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "8500"
+        },
+        {
+            "village": "兴北村委会",
+            "num": "12",
+            "primary": "3",
+            "junior_middle": "6",
+            "senior_middle": "0",
+            "high": "3",
+            "amount": "34500"
+        },
+        {
+            "village": "扎如木台村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "9000"
+        },
+        {
+            "village": "振兴村委会",
+            "num": "6",
+            "primary": "1",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "3",
+            "amount": "11500"
+        }
+    ],
+    "尼尔基镇": [
+        {
+            "village": "毕台村委会",
+            "num": "13",
+            "primary": "7",
+            "junior_middle": "6",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "48500"
+        },
+        {
+            "village": "博克图村委会",
+            "num": "13",
+            "primary": "12",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "47000"
+        },
+        {
+            "village": "博荣村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "布西社区居民委员会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "东升村委会",
+            "num": "12",
+            "primary": "9",
+            "junior_middle": "2",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "44500"
+        },
+        {
+            "village": "丰华村委会",
+            "num": "26",
+            "primary": "14",
+            "junior_middle": "7",
+            "senior_middle": "4",
+            "high": "1",
+            "amount": "97000"
+        },
+        {
+            "village": "哈力浅村委会",
+            "num": "16",
+            "primary": "12",
+            "junior_middle": "4",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "58000"
+        },
+        {
+            "village": "红星村委会",
+            "num": "11",
+            "primary": "10",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "35000"
+        },
+        {
+            "village": "后兴农村委会",
+            "num": "22",
+            "primary": "10",
+            "junior_middle": "4",
+            "senior_middle": "2",
+            "high": "6",
+            "amount": "61000"
+        },
+        {
+            "village": "绘图莫丁村委会",
+            "num": "8",
+            "primary": "3",
+            "junior_middle": "4",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "26500"
+        },
+        {
+            "village": "龙兴村委会",
+            "num": "6",
+            "primary": "0",
+            "junior_middle": "3",
+            "senior_middle": "2",
+            "high": "1",
+            "amount": "22000"
+        },
+        {
+            "village": "慕仁社区居民委员会",
+            "num": "2",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7000"
+        },
+        {
+            "village": "七家子村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "前巨仁村委会",
+            "num": "19",
+            "primary": "12",
+            "junior_middle": "3",
+            "senior_middle": "2",
+            "high": "2",
+            "amount": "64000"
+        },
+        {
+            "village": "前兴农村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "0"
+        },
+        {
+            "village": "双龙泉村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "万宝山村委会",
+            "num": "12",
+            "primary": "9",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "40500"
+        },
+        {
+            "village": "乌尔科村委会",
+            "num": "5",
+            "primary": "3",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "18500"
+        },
+        {
+            "village": "乌尔阔社区居民委员会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "西博荣村委会",
+            "num": "5",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "15500"
+        },
+        {
+            "village": "西拉金村委会",
+            "num": "24",
+            "primary": "6",
+            "junior_middle": "8",
+            "senior_middle": "7",
+            "high": "3",
+            "amount": "88000"
+        },
+        {
+            "village": "向阳村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7500"
+        },
+        {
+            "village": "兴隆泉村委会",
+            "num": "15",
+            "primary": "12",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "50000"
+        },
+        {
+            "village": "雅克萨社区居民委员会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "4000"
+        },
+        {
+            "village": "依兰社区居民委员会",
+            "num": "3",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "10500"
+        },
+        {
+            "village": "宜卧奇村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "永合发村委会",
+            "num": "20",
+            "primary": "8",
+            "junior_middle": "5",
+            "senior_middle": "4",
+            "high": "3",
+            "amount": "68000"
+        }
+    ],
+    "塔温敖宝镇": [
+        {
+            "village": "楚万山村委会",
+            "num": "6",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "2",
+            "amount": "14500"
+        },
+        {
+            "village": "达也扎德村委会",
+            "num": "6",
+            "primary": "2",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "2",
+            "amount": "15000"
+        },
+        {
+            "village": "大门庄村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "福盛村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "5000"
+        },
+        {
+            "village": "富民村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "15500"
+        },
+        {
+            "village": "霍日里绰罗村委会",
+            "num": "5",
+            "primary": "3",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "18500"
+        },
+        {
+            "village": "霍日其坎村委会",
+            "num": "6",
+            "primary": "3",
+            "junior_middle": "3",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "22500"
+        },
+        {
+            "village": "民兴村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "奇安哈德村委会",
+            "num": "4",
+            "primary": "4",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14000"
+        },
+        {
+            "village": "双青山村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7500"
+        },
+        {
+            "village": "顺斯提村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "塔北村委会",
+            "num": "2",
+            "primary": "1",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7500"
+        },
+        {
+            "village": "塔温敖宝村委会",
+            "num": "3",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "2",
+            "high": "1",
+            "amount": "10000"
+        },
+        {
+            "village": "万山庄村委会",
+            "num": "4",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "11000"
+        },
+        {
+            "village": "五宝山社区居民村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "新肯西拉金村委会",
+            "num": "2",
+            "primary": "2",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "7000"
+        }
+    ],
+    "卧罗河镇": [
+        {
+            "village": "大斡斯门村委会",
+            "num": "7",
+            "primary": "6",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "21000"
+        },
+        {
+            "village": "德日斯克村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "丰收村委会",
+            "num": "7",
+            "primary": "5",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "22500"
+        },
+        {
+            "village": "甘楞村委会",
+            "num": "13",
+            "primary": "10",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "44000"
+        },
+        {
+            "village": "龙河村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "前进村委会",
+            "num": "12",
+            "primary": "5",
+            "junior_middle": "3",
+            "senior_middle": "2",
+            "high": "2",
+            "amount": "39500"
+        },
+        {
+            "village": "斡斯门村委会",
+            "num": "12",
+            "primary": "8",
+            "junior_middle": "1",
+            "senior_middle": "2",
+            "high": "1",
+            "amount": "42000"
+        },
+        {
+            "village": "卧罗河村委会",
+            "num": "6",
+            "primary": "1",
+            "junior_middle": "4",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "19500"
+        }
+    ],
+    "腾克镇": [
+        {
+            "village": "巴卡哈里村委会",
+            "num": "7",
+            "primary": "6",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "25000"
+        },
+        {
+            "village": "东伊必奇村委会",
+            "num": "16",
+            "primary": "11",
+            "junior_middle": "5",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "58500"
+        },
+        {
+            "village": "怪勒村委会",
+            "num": "34",
+            "primary": "24",
+            "junior_middle": "10",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "124000"
+        },
+        {
+            "village": "郭恩河村委会",
+            "num": "12",
+            "primary": "9",
+            "junior_middle": "2",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "44500"
+        },
+        {
+            "village": "郭恩奇坎村委会",
+            "num": "9",
+            "primary": "5",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "4",
+            "amount": "17500"
+        },
+        {
+            "village": "霍日里村委会",
+            "num": "10",
+            "primary": "7",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "32500"
+        },
+        {
+            "village": "卡布楚村委会",
+            "num": "8",
+            "primary": "6",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "29000"
+        },
+        {
+            "village": "库木尔肯村委会",
+            "num": "5",
+            "primary": "3",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "18500"
+        },
+        {
+            "village": "塔兴村委会",
+            "num": "3",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "10500"
+        },
+        {
+            "village": "特莫呼珠村委会",
+            "num": "3",
+            "primary": "3",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "10500"
+        },
+        {
+            "village": "腾克村委会",
+            "num": "23",
+            "primary": "19",
+            "junior_middle": "2",
+            "senior_middle": "1",
+            "high": "1",
+            "amount": "79500"
+        },
+        {
+            "village": "提古拉村委会",
+            "num": "20",
+            "primary": "16",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "4",
+            "amount": "56000"
+        },
+        {
+            "village": "西伊必奇村委会",
+            "num": "6",
+            "primary": "4",
+            "junior_middle": "1",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "23000"
+        },
+        {
+            "village": "依兰台村委会",
+            "num": "26",
+            "primary": "22",
+            "junior_middle": "4",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "93000"
+        },
+        {
+            "village": "宜斯坎村委会",
+            "num": "9",
+            "primary": "8",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "33000"
+        },
+        {
+            "village": "扎罗梅村委会",
+            "num": "3",
+            "primary": "1",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11500"
+        }
+    ],
+    "坤密尔堤办事处": [
+        {
+            "village": "北林泉村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "二龙山村委会",
+            "num": "4",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "11000"
+        },
+        {
+            "village": "古山子村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "九龙泉村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "0"
+        },
+        {
+            "village": "坤密尔提村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "1",
+            "high": "0",
+            "amount": "5000"
+        },
+        {
+            "village": "青背村委会",
+            "num": "4",
+            "primary": "3",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "14500"
+        },
+        {
+            "village": "新农村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "8000"
+        },
+        {
+            "village": "兴泉村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        }
+    ],
+    "西瓦尔图镇": [
+        {
+            "village": "长新村委会",
+            "num": "13",
+            "primary": "9",
+            "junior_middle": "1",
+            "senior_middle": "3",
+            "high": "0",
+            "amount": "50500"
+        },
+        {
+            "village": "大库木尔村委会",
+            "num": "10",
+            "primary": "8",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "36000"
+        },
+        {
+            "village": "巨龙泉村委会",
+            "num": "1",
+            "primary": "1",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "3500"
+        },
+        {
+            "village": "民巨川村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "七间房村委会",
+            "num": "3",
+            "primary": "2",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "11000"
+        },
+        {
+            "village": "双龙堡村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "西瓦尔图村委会",
+            "num": "1",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "4000"
+        },
+        {
+            "village": "新发村委会",
+            "num": "0",
+            "primary": "0",
+            "junior_middle": "0",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "0"
+        },
+        {
+            "village": "兴隆村委会",
+            "num": "6",
+            "primary": "4",
+            "junior_middle": "2",
+            "senior_middle": "0",
+            "high": "0",
+            "amount": "22000"
+        },
+        {
+            "village": "永安村委会",
+            "num": "9",
+            "primary": "6",
+            "junior_middle": "1",
+            "senior_middle": "2",
+            "high": "0",
+            "amount": "35000"
+        },
+        {
+            "village": "卓络尼村委会",
+            "num": "2",
+            "primary": "0",
+            "junior_middle": "1",
+            "senior_middle": "0",
+            "high": "1",
+            "amount": "4000"
+        }
+    ]
+}
