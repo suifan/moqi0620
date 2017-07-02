@@ -3871,16 +3871,56 @@
                 <div class="item">务工时间：{{"3个月"}}</div>
                 <div class="item">工作种类：{{"普通工人"}}</div>
                 <div class="item last">工作状态：{{"务工/在校生"}}</div>
-                <div class="item"></div>
+                <div class="item">扶贫方式：</div>
             </div>
         </div>
         <div class="per-btm">
-            <p class="per-title">体检记录</p>
+            <p class="per-title">五人小组</p>
             <div style="width: 100%; background: #fff; height:3px;"></div>
-            <div class="physexam-record">
-                {{each physical_exam_records as pic}}
-                    <div><img src="{{pic}}" alt=""></div>
+            <div class="family-list">
+                {{each five_group as five}}
+                <div class="five-list">
+                    <div class="img">
+                        <div style="background: url({{five.avatar||'../images/avatar/default.jpg'}}) no-repeat center center;background-size: 120%;"></div>
+                    </div>
+                    <div class="info">
+                        <p>姓名：{{five.name}}</p>
+                        <p>性别：{{five.gender}}</p>
+                        <p>联系电话：{{five.phone}}</p>
+                    </div>
+                    <div class="state">
+                        <p>{{five.identity}}</p>
+                        <p><span class="online"></span>在线</p>
+                        {{if five.org_name}}
+                        <p style="min-width: 9vw">工作单位：{{five.org_name}}</p>
+                        {{/if}}
+                    </div>
+                </div>
                 {{/each}}
+                <!--<table>
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>工作单位</th>
+                        <th>联系电话</th>
+                        <th>身份</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{each five_group as five}}
+                    <tr>
+                        <td><em></em></td>
+                        <td>{{five.name}}</td>
+                        <td>{{five.gender}}</td>
+                        <td>{{five.org_name||""}}</td>
+                        <td>{{five.phone}}</td>
+                        <td>{{five.identity}}</td>
+                    </tr>
+                    {{/each}}
+                    </tbody>
+                </table>-->
             </div>
         </div>
     </div>

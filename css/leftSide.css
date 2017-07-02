@@ -452,7 +452,7 @@ span.span-active {
     float: left;
     /*background: red;*/
     width: 38vw;
-    height: 40vw;
+    height: 42vw;
     padding: 0 2vw;
     border-right: 3px dotted #2b59ab;
 }
@@ -567,7 +567,7 @@ span.span-active {
     border: none;
 }
 .family-list {
-    margin-top: .5  vw;
+    margin-top: .5vw;
     overflow: hidden;
 }
 /*扶贫卡家庭成员切换*/
@@ -588,6 +588,19 @@ span.span-active {
 }
 .horizontal .list-wrapper {
     width: 92%;
+}
+.family-mem-info {
+    margin-top: .6vw;
+    overflow: hidden;
+    font-size: .7vw;
+}
+.family-mem-info .item{
+    width: 38%;
+    float: left;
+}
+.family-mem-info .last{
+    width: 20%;
+    margin-left: 2%;
 }
 /*扶贫卡 五人小组名单*/
 .five-list>div {
@@ -613,7 +626,7 @@ span.span-active {
     /*background: black;*/
 }
 .five-list .info {
-    width: 11vw;
+    width: 12vw;
     /*background: greenyellow;*/
 }
 .five-list .info p,.five-list .state p {
@@ -627,8 +640,9 @@ span.span-active {
     float: right;
 }
 .five-list .state {
-    width: 13vw;
-    /*background: #fff;*/
+    width: 18vw;
+    /* background: #fff; */
+    margin-left: .8vw;
 }
 .five-list .state span.online {
     display: inline-block;
