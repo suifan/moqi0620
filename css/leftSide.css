@@ -941,6 +941,10 @@ table tr:nth-child(even) td{
     height: 33.8vw;
     width: 100%;
 }
+#productionTotalChart{
+     height: 5vw;
+    width: 100%;
+}
 /*兜底扶贫*/
 #fallbackYieldChart, #fallbackInvestChart {
     width: 100%;
