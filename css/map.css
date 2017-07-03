@@ -24,6 +24,7 @@
      position: relative;
      overflow: hidden;
  }
+
  
   .map-tips {
      position: fixed;
@@ -349,15 +350,15 @@
     position: fixed;
     right:30vw;
     top:9vw;
-    width: 2vw;
-    height: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
     border:0.15vw solid rgba(111, 145, 204, 0.9);
     font-size: 60%;
     cursor: pointer;
    
-    background: url(../images/map_goback.png) no-repeat center top;
+    background: url(../images/map-goback.png) no-repeat center top;
     background-color: rgba(45, 63, 117, 0.87);
-    background-size: 80% 60%;
+    background-size: 70%;
     z-index: 300;
     display: none;
  }
