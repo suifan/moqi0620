@@ -2905,9 +2905,9 @@
                 <h2 class="orange_title">扶贫工作统计</h2>
             </div>
             <div class="content">
-                <select name="" id="">
-                    <option value="">帮扶日志</option>
-                    <option value="">政策</option>
+                <select name="">
+                    <option value="0">帮扶日志</option>
+                    <option value="1">政策</option>
                 </select>
                 <div class="help_data_title">帮扶日志数量（份）{{2356}} <span class="goToDetail">more</span></div>
                 <div class="policy_title">帮扶政策数量（份）{{2356}} <span class="goToDetail">more</span></div>
@@ -3020,6 +3020,54 @@
                     <span class="progress_rate">60%</span>
                 </div>
 
+            </div>
+        </div>
+    </script>
+    <!--脱贫目标及完成情况-->
+    <script id="targetAndComplete" type="text/html">
+        <div class="blue">
+            <p>脱贫户数</p>
+            <p>{{4909}}</p>
+            <div class = "target_chart" id="notPoorFamilyChart"></div>
+            <div class="chartLabel">
+                <p>{{"68%"}}</p>
+                <p>完成率</p>
+            </div>
+        </div>
+        <div class="green">
+            <p>脱贫户数</p>
+            <p>{{4909}}</p>
+            <div class = "target_chart" id="notPoorPeopleChart"></div>
+            <div class="chartLabel">
+                <p>{{"68%"}}</p>
+                <p>完成率</p>
+            </div>
+        </div>
+        <div class="light_blue">
+            <p>开展项目（个）</p>
+            <p>{{4909}}</p>
+            <div class = "target_chart" id="projectChart"></div>
+            <div class="chartLabel">
+                <p>{{"68%"}}</p>
+                <p>完成率</p>
+            </div>
+        </div>
+        <div class="dark_yellow">
+            <p>已投入资金（万元）</p>
+            <p>{{4909}}</p>
+            <div class = "target_chart" id="fundChart"></div>
+            <div class="chartLabel">
+                <p>{{"68%"}}</p>
+                <p>资金使用率</p>
+            </div>
+        </div>
+        <div class="orange">
+            <p>识别精准贫困户</p>
+            <p>{{4909}}</p>
+            <div class = "target_chart" id="preciseChart"></div>
+            <div class="chartLabel">
+                <p>{{"68%"}}</p>
+                <p>识别精准率</p>
             </div>
         </div>
     </script>

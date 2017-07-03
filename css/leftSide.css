@@ -1065,3 +1065,33 @@ margin: 0 .3vw;
     height: 2.3vw;
     line-height: 2.3vw;
 }
+
+.target_chart{
+    height:15vh;
+    width:7vw;
+    position: absolute;
+}
+.target .content{
+    text-align: center;
+}
+.target .content>div{
+    text-align: center;
+    width: 7.3vw;
+    position: relative;
+    height: 21vh;
+    display: inline-block;
+}
+.target .content>div p{
+    line-height: 1.5vw;
+    white-space: nowrap;
+}
+.chartLabel{
+    margin-top: 5vh;
+}
+
+.target .chartLabel p{
+    font-size:.8vw;
+}
+.target .chartLabel p:first-child{
+    font-size:1.8vw;
+}

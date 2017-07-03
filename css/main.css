@@ -587,28 +587,32 @@ display: table;
 
 
 /*蓝色*/
-.blue,.blue .progress_rate{
+.blue,.blue .progress_rate,.blue p,.blue span{
     color:#1b9deb;
 }
 /*橙色*/
-.orange,.orange .progress_rate{
+.orange,.orange .progress_rate,.orange p,.orange span{
     color: #f19149;
 }
 /*绿色*/
-.green,.green .progress_rate{
+.green,.green .progress_rate,.green p,.green span{
     color: #74db46;
 }
 /*青色*/
-.light_blue,.light_blue .progress_rate{
+.light_blue,.light_blue .progress_rate,.light_blue p,.light_blue span{
     color: #46dbdb;
 }
 /*深黄*/
-.dark_yellow,.dark_yellow .progress_rate{
+.dark_yellow,.dark_yellow .progress_rate,.dark_yellow p,.dark_yellow span{
     color:#ffb400;
 }
 /*浅黄*/
-.yellow,.yellow .progress_rate{
+.yellow,.yellow .progress_rate,.yellow p,.yellow span{
     color:#ffff00;
+}
+/*红色*/
+.red,.red p,.red span{
+    color: #ec6941;
 }
 
 

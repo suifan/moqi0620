@@ -318,6 +318,64 @@ define(['echarts'], function(echarts) {
         resize_window(legendPie);
     };
     /**
+     * 首页的饼图
+     */
+
+    var colorPie = function(id, color,pieData) {
+        var legendPie = echarts.init(document.getElementById(id))
+        legendPie.setOption({
+            series: [{
+                name: '值',
+                type: 'pie',
+                clockWise: true, //顺时加载
+                hoverAnimation: false, //鼠标移入变大
+                radius: ["89%","92%"],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: false,
+                        },
+                        borderWidth: 4,
+                        borderColor: color,
+
+                    }
+                },
+                data: [{
+                    value: 8
+                }, {
+                    value: 2,
+                    name: '',
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: false,
+                                position: "center"
+                            },
+                            labelLine: {
+                                show: false
+                            },
+                            color: color,
+                            borderColor: color,
+                            borderWidth: 0
+                        }
+
+                    }
+                }]
+            }, {
+                name: '白',
+                type: 'pie',
+                clockWise: false,
+                radius: ["95%", "96%"],
+                hoverAnimation: false,
+                data: [{
+                    value: 1
+                }]
+            },   ]
+        });
+        resize_window(legendPie);
+    };
+
+    /**
      * 显示label和labelline饼图(针对健康扶贫右侧)
      * @param id : string 图表容器
      * @param pieData : object
@@ -1144,7 +1202,8 @@ define(['echarts'], function(echarts) {
         'youChart': youChart,
         'lineChart': lineChart,
 
-        'radarChart':radarChart
+        'radarChart':radarChart,
+        'colorPie':colorPie
 
     };
 });

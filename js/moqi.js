@@ -80,12 +80,35 @@
                         $(".government").trigger("click");
                     }
                 });
+                $("#workStatistics").find("select").on("change",function(){
+                    if($(this).val()==0){
+                        $(".help_data_title").show();
+                        $(".policy_title").hide();
+                        $(".help_data").show();
+                        $(".policy").hide();
+
+
+                    }else{
+                        $(".help_data_title").hide();
+                        $(".policy_title").show();
+                        $(".help_data").hide();
+                        $(".policy").show();
+
+                    }
+
+                })
                 //右侧--------------------end
 
                 //左侧--------------------start
+                $('#leftSide').html(template('homepageLeftSideTemp', {}));
+                $('.target .content').html(template('targetAndComplete', {}));
+                charts.colorPie("notPoorFamilyChart","#1b9deb",{})
+                charts.colorPie("notPoorPeopleChart","#74db46",{})
+                charts.colorPie("projectChart","#46dbdb",{})
+                charts.colorPie("fundChart","#ffb400",{})
+                //左侧--------------------end
                 //获取首页左侧数据
 
-                $('#leftSide').html(template('homepageLeftSideTemp', {}));
                 //进度条生成
                 $(".special_progress").find(".progressBar").each(function() {
                     var percent = $(this).parent().find(".progress_rate").text();
