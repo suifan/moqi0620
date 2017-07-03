@@ -329,13 +329,14 @@ define(['echarts'], function(echarts) {
                 type: 'pie',
                 clockWise: true, //顺时加载
                 hoverAnimation: false, //鼠标移入变大
-                radius: ["89%","92%"],
+                radius: ["86%","89%"],
                 itemStyle: {
                     normal: {
                         label: {
                             show: false,
+                            position: 'center'
                         },
-                        borderWidth: 4,
+                        borderWidth: 3,
                         borderColor: color,
 
                     }
@@ -365,8 +366,22 @@ define(['echarts'], function(echarts) {
                 name: '白',
                 type: 'pie',
                 clockWise: false,
-                radius: ["95%", "96%"],
+                radius: ["92%", "93%"],
                 hoverAnimation: false,
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: false,
+                            position: "center"
+                        },
+                        labelLine: {
+                            show: false
+                        },
+
+                        borderWidth: 0
+                    }
+
+                },
                 data: [{
                     value: 1
                 }]

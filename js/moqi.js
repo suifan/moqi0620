@@ -71,6 +71,10 @@
                 // $.getJSON("../js/json/homePage/dutyHost.json", function(data) {
                     // if (data) {
                         $('#rightSide').html(template('homepageRightSideTemp', {}));
+                $(".fileOne").viewer();
+                $(".file2").viewer({navbar: true});
+                $(".file3").viewer({navbar: true});
+                $(".file4").viewer({navbar: true});
                         charts.radarChart("poorReason",[5000, 14000, 28000, 31000, 42000, 21000,20000,10000])
                     // }
 
@@ -101,17 +105,11 @@
 
                 //左侧--------------------start
                 $('#leftSide').html(template('homepageLeftSideTemp', {}));
-                $('.target .content').html(template('targetAndComplete', {}));
-                charts.colorPie("notPoorFamilyChart","#1b9deb",{})
-                charts.colorPie("notPoorPeopleChart","#74db46",{})
-                charts.colorPie("projectChart","#46dbdb",{})
-                charts.colorPie("fundChart","#ffb400",{})
-                charts.colorPie("preciseChart","#f19149",{})
-                charts.colorPie("onlineChart","#ec6941",{})
-                charts.colorPie("incomeChart","#ffff00",{})
-                charts.colorPie("populationChart","#8fc31f",{})
+                api.getTarget();
+                $(".target select").on("change",function(){
+                    api.getTarget();
+                })
                 //左侧--------------------end
-                //获取首页左侧数据
 
                 //进度条生成
                 $(".special_progress").find(".progressBar").each(function() {
@@ -122,7 +120,6 @@
                     progressBar.generate($(this), percent);
                 });
 
-                //左侧--------------------end
                 //底部--------------------start
                 $('.bottom').html(template('povertyStatus', {}));
                 //底部按钮点击事件
@@ -157,6 +154,17 @@
                     }
                 });
                 //底部--------------------end
+            },
+            'getTarget':function(){
+                $('.target .content').html(template('targetAndComplete', {}));
+                charts.colorPie("notPoorFamilyChart","#1b9deb",{})
+                charts.colorPie("notPoorPeopleChart","#74db46",{})
+                charts.colorPie("projectChart","#46dbdb",{})
+                charts.colorPie("fundChart","#ffb400",{})
+                charts.colorPie("preciseChart","#f19149",{})
+                charts.colorPie("onlineChart","#ec6941",{})
+                charts.colorPie("incomeChart","#ffff00",{})
+                charts.colorPie("populationChart","#8fc31f",{})
             },
             'getRelocate': function() {
                 $("#whole").show().html(template('relocateTemp', {}));
