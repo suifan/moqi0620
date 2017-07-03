@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/map.css">
     <link rel="stylesheet" href="../css/viewer.min.css">
 </head>
+
 <!-- <head>
     <meta charset="UTF-8">
     <title>莫旗大屏</title>
@@ -2896,22 +2897,63 @@
                 <h2 class="green_title">致贫原因构成</h2>
             </div>
             <div class="content">
+                <div id="poorReason"></div>
             </div>
         </div>
-        <div class="section" id="management">
+        <div class="section" id="workStatistics">
             <div class="header">
                 <h2 class="orange_title">扶贫工作统计</h2>
             </div>
             <div class="content">
+                <select name="" id="">
+                    <option value="">帮扶日志</option>
+                    <option value="">政策</option>
+                </select>
+                <div class="help_data_title">帮扶日志数量（份）{{2356}} <span class="goToDetail">more</span></div>
+                <div class="policy_title">帮扶政策数量（份）{{2356}} <span class="goToDetail">more</span></div>
+                <div class="help_data">
+                    <div class="workTrend">
+                        <img src="../images/work_info/wuhaotian.jpg" alt="工作动态" title="">
+                        <div>
+                            <p>题目题目题目题目</p>
+                            <span>汉古尔河镇东诺敏村第一书记吴昊天，入户简介四种四养扶贫情况。</span>
+                        </div>
+                    </div>
+                    <div class="workTrend">
+                        <img src="../images/work_info/wuhaotian.jpg" alt="工作动态" title="">
+                        <div>
+                            <p>题目题目题目题目</p>
+                            <span>汉古尔河镇东诺敏村第一书记吴昊天，入户简介四种四养扶贫情况。</span>
+                        </div>
+                    </div>
+                    <div class="workTrend">
+                        <img src="../images/work_info/wuhaotian.jpg" alt="工作动态" title="">
+                        <div>
+                            <p>题目题目题目题目</p>
+                            <span>汉古尔河镇东诺敏村第一书记吴昊天，入户简介四种四养扶贫情况。</span>
+                        </div>
+                    </div><div class="workTrend">
+                    <img src="../images/work_info/wuhaotian.jpg" alt="工作动态" title="">
+                    <div>
+                        <p>题目题目题目题目</p>
+                        <span>汉古尔河镇东诺敏村第一书记吴昊天，入户简介四种四养扶贫情况。</span>
+                    </div>
+                </div>
+
+                </div>
+                <div class="policy">
+
+                </div>
             </div>
         </div>
+
     </script>
     <!--首页模板 左侧-->
     <script id="homepageLeftSideTemp" type="text/html">
         <div class="section target">
             <div class="header">
                 <h2>脱贫目标及完成情况</h2>
-                <select name="" id="">
+                <select name="">
                     <option value="">2017</option>
                 </select>
             </div>
@@ -2927,50 +2969,57 @@
                     产业扶贫&nbsp;
                     <div class="progressBar pg_blue">
                         <div class="progressBarBg"></div>
-                        <div class="progressBarBar" style="width: 60%;"></div>
+                        <div class="progressBarBar"></div>
                     </div>
-                    &nbsp; 60%
+                    &nbsp;
+                    <span class="progress_rate">60%</span>
                 </div>
                 <div class="orange">
                     异地搬迁&nbsp;
                     <div class="progressBar pg_orange">
                         <div class="progressBarBg"></div>
-                        <div class="progressBarBar" style="width: 60%;"></div>
+                        <div class="progressBarBar"></div>
                     </div>
-                    &nbsp; 60%
+                    &nbsp;
+                    <span class="progress_rate">60%</span>
                 </div>
                 <div class="dark_yellow">
                     生态扶贫&nbsp;
                     <div class="progressBar pg_dark_yellow">
                         <div class="progressBarBg"></div>
-                        <div class="progressBarBar" style="width: 60%;"></div>
+                        <div class="progressBarBar"></div>
                     </div>
-                    &nbsp; 60%
+                    &nbsp;
+                    <span class="progress_rate">60%</span>
                 </div>
                 <div class="green">
                     教育扶贫&nbsp;
                     <div class="progressBar pg_green">
                         <div class="progressBarBg"></div>
-                        <div class="progressBarBar" style="width: 60%;"></div>
+                        <div class="progressBarBar"></div>
                     </div>
-                    &nbsp; 60%
+                    &nbsp;
+                    <span class="progress_rate">60%</span>
                 </div>
                 <div class="light_blue">
                     兜底保障&nbsp;
                     <div class="progressBar pg_light_blue">
                         <div class="progressBarBg"></div>
-                        <div class="progressBarBar" style="width: 60%;"></div>
+                        <div class="progressBarBar"></div>
                     </div>
-                    &nbsp; 60%
+                    &nbsp;
+                    <span class="progress_rate">60%</span>
                 </div>
                 <div class="yellow">
                     健康扶贫&nbsp;
                     <div class="progressBar pg_yellow">
                         <div class="progressBarBg"></div>
-                        <div class="progressBarBar" style="width: 60%;"></div>
+                        <div class="progressBarBar"></div>
                     </div>
-                    &nbsp; 60%
+                    &nbsp;
+                    <span class="progress_rate">60%</span>
                 </div>
+
             </div>
         </div>
     </script>
@@ -3162,7 +3211,7 @@
                 <h2>党建促脱贫总体目标</h2>
             </div>
             <div class="content">
-                <div class="whiteBg">
+                <div class="">
                     <p>实现“两不愁，三保障”</p>
                     <p>确保 <span>4909</span> 户贫困户和 <span>12134</span>名贫困人口稳定脱贫</p>
                     <img src="../images/homePage_commandV2.png" class="command_show" alt="">
@@ -3175,13 +3224,12 @@
                 <h2>基层党建</h2>
             </div>
             <div class="content">
-                <div class="whiteBg">
+                <div class="">
                     <div class="team">
-                        <span class="blue">6723次</span>
-                        <span class="red">276次</span>
-                        <span class="green">12286</span>
-                        <span class="yellow">460</span>
-                        <div id="satisfactionChart"></div>
+                        <span class="one">6723次</span>
+                        <span class="two">276次</span>
+                        <span class="three">12286</span>
+                        <span class="four">460</span>
                     </div>
                 </div>
             </div>
@@ -3191,7 +3239,7 @@
                 <h2>监督考核</h2>
             </div>
             <div class="content">
-                <div class="whiteBg">
+                <div class="">
                     <div>
                         <p>出勤率</p>
                         <div id="attendanceChart" class="threeCharts"></div>
@@ -3204,6 +3252,10 @@
                         <p>纪律考核</p>
                         <div id="disciplineChart" class="threeCharts"></div>
                     </div>
+                    <div>
+                        <p>群众满意度</p>
+                        <div id="satisfactionChart" class="threeCharts"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -3214,7 +3266,7 @@
                 <h2>帮扶力量</h2>
             </div>
             <div class="content">
-                <div class="whiteBg">
+                <div class="">
                     <div>
                         <p>第一书记</p>
                         <div id="secretaryChart" class="threeCharts"></div>
@@ -3235,7 +3287,7 @@
                 <h2>工作动态</h2>
             </div>
             <div class="content">
-                <div class="whiteBg">
+                <div class="">
                     <div class="workTrend">
                         <img src="../images/work_info/wuhaotian.jpg" alt="工作动态">
                         <div>
@@ -4209,7 +4261,7 @@
                 <div class="productionMoneyChartDiv">
                     <div id="productionMoneyChart"></div>
                     <span>2557</span>
-                </div> 
+                </div>
         </div>
 
 
@@ -4234,7 +4286,7 @@
                 <div id="productionYieldChart"></div>
             </div>
         </div>
-        
+
     </script>
     <!--产业动态模板-->
     <script id="productionBottomTemp" type="text/html">
@@ -4318,7 +4370,7 @@
                 <h2>扶贫动态</h2>
             </div>
             <div class="content">
-                <div class="whiteBg">
+                <div class="">
                     <div class="workTrend">
                         <img src="../images/poverty/fallback_help_1.png" alt="">
                         <div>
@@ -4695,7 +4747,7 @@
                 <h2> 扶贫经济林统计</h2>
             </div>
             <div class="content ">
-                <div class='whiteBg2'>
+                <div class='2'>
                     <p class='tree-p'>扶贫经济林总数<span class='greenTxt fSize2'>24万亩</span> </p>
                 </div>
             </div>
@@ -4759,7 +4811,7 @@
                 <h2> 退耕还林统计</h2>
             </div>
             <div class="content">
-                <div class='whiteBg2'>
+                <div class='2'>
                     <p class='tree-p'>累计退耕还林统计： <span class='greenTxt fSize2'>10.89万亩</span> </p>
                     <p class='tree-p'>贫困户数量： <span class='greenTxt fSize2'>500户</span> </p>
                     <p class='tree-p'>资金： <span class='greenTxt fSize2 '>500元/亩 </span> </p>
@@ -4777,7 +4829,7 @@
                     <h2> 生态护林统计</h2>
                 </div>
                 <div class="content">
-                    <div class='whiteBg2'>
+                    <div class='2'>
                         <p class='tree-p'>生态护林户： <span class='greenTxt fSize2'>200户</span> </p>
                         <p class='tree-p'>年度资金： <span class='greenTxt fSize2'>200万元</span> </p>
                     </div>

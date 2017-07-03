@@ -1055,6 +1055,65 @@ define(['echarts'], function(echarts) {
         });
         resize_window(treeChart);
     };
+
+
+    /**
+     * 雷达图
+     * @param id : string 图表容器
+     * @param pieData : object
+     * @pieData.color : 颜色(可以为array)
+     * @pieData.data  : 数据
+     * @pieData.xAxisData : X轴坐标轴字段
+     */
+    var radarChart = function(id, data) {
+        var chart = echarts.init(document.getElementById(id));
+        chart.setOption({
+            color:["#00a0e9"],
+            radar: {
+                indicator: [
+                    { name: '自身发展动力不足', max: 6500,value:1000,percent:"50%"},
+                    { name: '因病', max: 16000,value:1000,percent:"50%"},
+                    { name: '缺劳力', max: 30000,value:1000,percent:"50%"},
+                    { name: '缺技术', max: 38000,value:1000,percent:"50%"},
+                    { name: '缺资金', max: 52000,value:1000,percent:"50%"},
+                    { name: '缺土地', max: 25000,value:1000,percent:"50%"},
+                    { name: '因学', max: 25000,value:1000,percent:"50%"},
+                    { name: '因灾', max: 25000,value:1000,percent:"50%"},
+                ],
+                splitLine:{
+                    lineStyle:{
+                        color:"#fff"
+                    }
+                },
+                splitNumber:4,
+                radius:'50%',
+                name:{
+                    formatter:function(value,indicator){
+                        console.log(value+","+indicator);
+                        return value+"\n"+indicator.value+"户"+" "+indicator.percent;
+                    }
+                }
+            },
+            series: [{
+                type: 'radar',
+                areaStyle: {
+                    normal: {
+                        color:"#7ecef4"
+
+                    }
+                },
+                data : [
+
+                    {
+                        value : data
+
+                    }
+                ]
+            }]
+        });
+        resize_window(chart);
+    };
+
     /**
      * 重置浏览器窗口图表随之变化
      * @param Chart 图表
@@ -1083,7 +1142,9 @@ define(['echarts'], function(echarts) {
         'treeChart': treeChart,
 
         'youChart': youChart,
-        'lineChart': lineChart
+        'lineChart': lineChart,
+
+        'radarChart':radarChart
 
     };
 });

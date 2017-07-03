@@ -200,8 +200,8 @@ div{
     box-sizing: border-box;
 }
 
-.section .header .goToDetail{
-    background: url(../images/goToDetailV2.png) 2.7vw 0.7vw no-repeat;
+ .goToDetail{
+    background: url(../images/goToDetailV2.png) 2.7vw .1vw no-repeat;
     height: 2vw;
     width: 2.5vw;
     padding-right: 1vw;
@@ -212,7 +212,6 @@ div{
     font-size: 1vw;
     color: #9ba8c0;
     margin-right: .5vw;
-    line-height: 2.3vw;
 }
 
 .section .header .sectionTab{
@@ -588,27 +587,27 @@ display: table;
 
 
 /*蓝色*/
-.blue{
+.blue,.blue .progress_rate{
     color:#1b9deb;
 }
 /*橙色*/
-.orange{
+.orange,.orange .progress_rate{
     color: #f19149;
 }
 /*绿色*/
-.green{
+.green,.green .progress_rate{
     color: #74db46;
 }
 /*青色*/
-.light_blue{
+.light_blue,.light_blue .progress_rate{
     color: #46dbdb;
 }
 /*深黄*/
-.dark_yellow{
+.dark_yellow,.dark_yellow .progress_rate{
     color:#ffb400;
 }
 /*浅黄*/
-.yellow{
+.yellow,.yellow .progress_rate{
     color:#ffff00;
 }
 

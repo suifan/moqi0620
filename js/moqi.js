@@ -71,17 +71,9 @@
                 // $.getJSON("../js/json/homePage/dutyHost.json", function(data) {
                     // if (data) {
                         $('#rightSide').html(template('homepageRightSideTemp', {}));
-                        //进度条生成
-                        $("#performance").find(".progressBar").each(function() {
-                            var percent = $(this).find(".progressRate").text();
-                            if (percent.substr(-1) !== "%") {
-                                percent = percent.slice(0, -1) + "%";
-                            }
-                            progressBar.generate($(this), percent);
-                        });
+                        charts.radarChart("poorReason",[5000, 14000, 28000, 31000, 42000, 21000,20000,10000])
                     // }
-                    $(".command").viewer();
-                    $(".management").viewer();
+
                 // })
                 $("#rightSide").on("click", "div", function() {
                     if ($(this).attr("id") == "performance") {
@@ -94,6 +86,14 @@
                 //获取首页左侧数据
 
                 $('#leftSide').html(template('homepageLeftSideTemp', {}));
+                //进度条生成
+                $(".special_progress").find(".progressBar").each(function() {
+                    var percent = $(this).parent().find(".progress_rate").text();
+                    if (percent.substr(-1) !== "%") {
+                        percent = percent.slice(0, -1) + "%";
+                    }
+                    progressBar.generate($(this), percent);
+                });
 
                 //左侧--------------------end
                 //底部--------------------start
@@ -198,14 +198,14 @@
             },
             'getGovernment': function() {
                 $("#leftSide").html(template('governmentTemp_left', {}));
-                chart.pieChart("satisfactionChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '100',"分");
-                chart.pieChart("attendanceChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '100',"分");
-                chart.pieChart("resumptionChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '100', "分");
-                chart.pieChart("disciplineChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '100', '分');
+                chart.pieChart("satisfactionChart", "#1b9deb", "#1b9deb","#fff",[{ "value": 100 }], '100',"%");
+                chart.pieChart("attendanceChart", "#1b9deb", "#1b9deb","#fff", [{ "value": 100 }], '100',"%");
+                chart.pieChart("resumptionChart", "#1b9deb", "#1b9deb","#fff", [{ "value": 100 }], '100', "分");
+                chart.pieChart("disciplineChart", "#1b9deb", "#1b9deb", "#fff",[{ "value": 100 }], '100', '分');
                 $("#rightSide").html(template('governmentTemp_right', {}));
-                chart.pieChart("secretaryChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '220', '人');
-                chart.pieChart("workTeamChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '55', "支");
-                chart.pieChart("cadreChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '1322', '人');
+                chart.pieChart("secretaryChart", "#1b9deb", "#1b9deb","#fff", [{ "value": 100 }], '220', '人');
+                chart.pieChart("workTeamChart", "#1b9deb", "#1b9deb", "#fff",[{ "value": 100 }], '55', "支");
+                chart.pieChart("cadreChart", "#1b9deb", "#1b9deb","#fff", [{ "value": 100 }], '1322', '人');
                 $('.bottom').html(template('governmentTemp_bottom', {}));
                 $(".command").viewer();
                 // bottomBind();

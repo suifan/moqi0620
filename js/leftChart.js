@@ -7,7 +7,7 @@ require.config({
     }
 });
 define(['echarts'],function(echarts){
-    var pieChart = function(id, color1,color2,dataArr,percent,label){
+    var pieChart = function(id, color1,color2,color3,dataArr,percent,label){
         var pieChart = echarts.init(document.getElementById(id));
         pieChart.setOption({
             tooltip: {
@@ -33,7 +33,7 @@ define(['echarts'],function(echarts){
                             textStyle: {
                                 fontSize: '12',
                                 fontWeight: 'normal',
-                                color:color1
+                                color:color3
                             }
                         }
                     },

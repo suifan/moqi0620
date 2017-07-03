@@ -2,63 +2,10 @@
     position: relative;
 }
 /*首页 start*/
-#leftOperation{
-    position: absolute;
-    background: url(../images/moqiSprite.png) -9.5vw 0 no-repeat;
-    right: 23vw;
-    top: 16vw;
-    height: 8.5vw;
-    width: 2.8vw;
-    background-size: 3400%;
-    cursor: pointer;
+#poorReason{
+    height:45vh;
+    width:100%;
 }
-#leftOperation.closed{
-    background: url(../images/moqiSprite.png) -9.5vw 0 no-repeat;
-}
-#sevenStepsTab{
-    position: absolute;
-    background: url(../images/moqiSprite.png) -19vw 0 no-repeat;
-    right: 23vw;
-    top: 10vw;
-    height: 12.5vw;
-    width: 3.5vw;
-    background-size: 3804%;
-
-}
-
-#performance .progress-title{
-    width: 12vw;
-    display: inline-block;
-    color: #b6b6b6;
-    font-size: 1.1vw;
-}
-
-#performance li{
-    height: 2vw;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: .5vw;
-    line-height: initial;
-}
-
-#performance .progressBar{
-    width:9vw;
-    height:1.3vw;
-}
-
-#performance .progressRate {
-    position: absolute;
-    top: -1.2vw;
-    margin-left:0;
-    left: 40%;
-}
-
-
-#cause .content{
-    padding:.1vw;
-}
-
 .content li.progressLi{
     height: 4.7vw;
     width: 23%;
@@ -347,7 +294,7 @@ li.progressLi p {
     height:auto;
 }
 
-#workTrends img{
+.workTrend img{
     width: 30%;
     height: 5vw;
     float: left;
@@ -380,7 +327,7 @@ li.progressLi p {
 }
 
 .workTrend>div>span{
-    text-indent: 1.8vw;
+    /*text-indent: 1.8vw;*/
     font-size: .9vw;
     display: inline-block;
     overflow : hidden;
@@ -441,11 +388,11 @@ li.progressLi p {
     position: relative;
 }
 .governmentBottom img{
-    width:9vw;
+    width:8vw;
 }
 
 .governmentBottom p{
-    font-size: .5vw;
+    font-size: .9vw;
 }
 
 .governmentBottom .files{
@@ -460,3 +407,46 @@ li.progressLi p {
 #basicBuilding .content{
     position:relative;
 }
+
+#helpPower p{
+    color: #d4e4ff;
+    font-size: 1.2vw;
+}
+
+#workStatistics select{
+    width: 5.5vw;
+    background-position: 4.2vw -1.4vw;
+    background-size: 39%;
+}
+
+#workStatistics .goToDetail{
+    font-size: .9vw;
+    color: #d4e4ff;
+    background-position-x: 2.5vw;
+}
+.help_data_title,.policy_title {
+    /*display: inline-block; *!*/
+    width: 17.2vw;
+    vertical-align: top;
+    padding-left: 1vw;
+    float: right;
+    margin-top: 0.7vw;
+    color: #d4e4ff;
+}
+.policy_title{
+    display: none;
+}
+
+.help_data{
+    height:45vh;
+    width: 23vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.help_data .workTrend p,.help_data .workTrend span{
+    color: #d4e4ff;
+}
+.help_data .workTrend p{
+    margin-bottom: .6vw;
+}
+
