@@ -2894,15 +2894,13 @@
 <script id="mapPartyClickTemp" type="text/html">
     <div class="map-content">
         <ul class="links-list">
-         <li><a id="workTeam" class="partyLinks" href="javascript:;">驻村第一书记工作队</a></li>
-         <li><a id="villageCadre" class="partyLinks" href="javascript:;">村两委干部</a></li>
-            <li><a id="partyHome" class="partyLinks" href="javascript:;">党员家</a></li>
-            <!--<li><a id="partyLeader" class="partyLinks" href="javascript:;">干部</a></li>-->
-            <li><a id="partyVillageMap" class="partyLinks" href="javascript:;">村地图</a></li>
-           
-            
-        </ul>
-    </div>
+             <li><a id="workTeam" class="partyLinks" href="javascript:;">驻村第一书记工作队</a></li>
+             <li><a id="villageCadre" class="partyLinks" href="javascript:;">村两委干部</a></li>
+                <li><a id="partyHome" class="partyLinks" href="javascript:;">党员家</a></li>
+                <!--<li><a id="partyLeader" class="partyLinks" href="javascript:;">干部</a></li>-->
+                <li><a id="partyVillageMap" class="partyLinks" href="javascript:;">村地图</a></li>
+            </ul>
+        </div>
     <div class="map-sanjiao"></div>
 </script>
 
@@ -3825,30 +3823,38 @@
             <p class="per-title">家庭成员({{8}}位)</p>
             <div style="width: 100%; background: #fff; height:3px;"></div>
             <div class="family-list horizontal">
-                <div id="leftBtn" class="button"><img src="" alt=""></div>
+                <div id="leftBtn" class="button left-switch"></div>
                 <div id = "familyMem" class="list-wrapper">
                     <ul>
-                        <li class="active">
-                            <div class="avatar"><img src="" alt=""></div>
-                            <div><span>{{"张三丰"}}</span><span>{{"户主"}}</span></div>
+                        <li data-id="1">
+                            <div class="avatar">
+                                <div class="avatar-wrap">
+                                    <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1440083631,2443886313&fm=58&bpow=505&bpoh=690" alt="">
+                                </div>
+                            </div>
+                            <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                            <div class="split-line active"></div>
                         </li>
-                        <li>
+                        <li data-id="1">
                             <div class="avatar"><img src="" alt=""></div>
-                            <div><span>{{"张三丰"}}</span><span>{{"户主"}}</span></div>
+                            <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                            <div class="split-line"></div>
                         </li>
-                        <li>
+                        <li data-id="1">
                             <div class="avatar"><img src="" alt=""></div>
-                            <div><span>{{"张三丰"}}</span><span>{{"户主"}}</span></div>
+                            <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                            <div class="split-line"></div>
                         </li>
-                        <li>
+                        <li data-id="1">
                             <div class="avatar"><img src="" alt=""></div>
-                            <div><span>{{"张三丰"}}</span><span>{{"户主"}}</span></div>
+                            <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                            <div class="split-line"></div>
                         </li>
                     </ul>
                 </div>
-                <div id="rightBtn" class="button"><img src="" alt=""></div>
+                <div id="rightBtn" class="button right-switch"></div>
             </div>
-            <div class="family-mem-info">
+            <div class="fam-member-info">
                 <div class="item">姓名：{{"张三丰"}}</div>
                 <div class="item">家庭住址：{{"北京市朝阳区八里庄街道晨练中心256号楼"}}</div>
                 <div class="item">身份证：{{146736767483736256}}</div>
@@ -3866,7 +3872,7 @@
         <div class="per-btm">
             <p class="per-title">五人小组</p>
             <div style="width: 100%; background: #fff; height:3px;"></div>
-            <div class="family-list">
+            <div class="family-list five">
                 {{each five_group as five}}
                 <div class="five-list">
                     <div class="img">
@@ -3914,54 +3920,41 @@
         </div>
     </div>
     <div class="per-right card">
-
-        <section>
-            <p class="per-title">五人小组名单</p>
+        <section class="health-sec">
+            <p class="per-title">健康状况</p>
             <div style="width: 100%; background: #fff; height:3px;"></div>
             <div class="family-list">
-                {{each five_group as five}}
-                <div class="five-list">
-                    <div class="img">
-                        <div style="background: url({{five.avatar||'../images/avatar/default.jpg'}}) no-repeat center center;background-size: 120%;"></div>
-                    </div>
-                    <div class="info">
-                        <p>姓名：{{five.name}}</p>
-                        <p>性别：{{five.gender}}</p>
-                        <p>联系电话：{{five.phone}}</p>
-                    </div>
-                    <div class="state">
-                        <p>{{five.identity}}</p>
-                        <p><span class="online"></span>在线</p>
-                        {{if five.org_name}}
-                        <p style="min-width: 9vw">工作单位：{{five.org_name}}</p>
-                        {{/if}}
-                    </div>
+                <div class="family-mem-info health">
+                <div class="item">疾病名称：{{"糖尿病"}}</div>
+                <div class="item">诊断机构：{{"北京市朝阳区八里"}}</div>
+                <div class="item last">计划救治年份：{{2016}}</div>
+                <div class="item">治疗机构：{{"哈尔滨第四人民医院"}}</div>
+                <div class="item">救治状况：{{"正在救治"}}</div>
+                <div class="item last">治疗效果：{{"好转"}}</div>
+            </div>
+        </section>
+        <section class="exam-sec">
+            <p class="per-title">体检</p>
+            <div style="width: 100%; background: #fff; height:3px;"></div>
+            <div class="family-list horizontal">
+                <div id="examLeftBtn" class="button left-switch"><img src="" alt=""></div>
+                <div id = "phyExam" class="list-wrapper phy-exam">
+                    <ul>
+                        <li class="active">
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                    </ul>
                 </div>
-                {{/each}}
-                <!--<table>
-                    <thead>
-                    <tr>
-                        <th></th>
-                        <th>姓名</th>
-                        <th>性别</th>
-                        <th>工作单位</th>
-                        <th>联系电话</th>
-                        <th>身份</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {{each five_group as five}}
-                    <tr>
-                        <td><em></em></td>
-                        <td>{{five.name}}</td>
-                        <td>{{five.gender}}</td>
-                        <td>{{five.org_name||""}}</td>
-                        <td>{{five.phone}}</td>
-                        <td>{{five.identity}}</td>
-                    </tr>
-                    {{/each}}
-                    </tbody>
-                </table>-->
+                <div id="examRightBtn" class="button right-switch"><img src="" alt=""></div>
             </div>
         </section>
         <section class="help-method">
@@ -3969,10 +3962,52 @@
             <div style="width: 100%; background: #fff; height:3px;"></div>
             <div class="cure-content">
                 <div class="cure-plan">
-                    <div class="cure-info"><span>{{treatment||"暂无"}}</span></div>
+                    <div>疾病名称：<span>{{"糖尿病"}}</span></div>
+                    <div class="cure-info">治疗方案：<span>{{treatment||"暂无"}}</span></div>
                 </div>
             </div>
-
+        </section>
+        <section class="cure-sec">
+            <p class="per-title">治疗过程</p>
+            <div style="width: 100%; background: #fff; height:3px;"></div>
+            <div class="family-list horizontal">
+                <div class="list-wrapper phy-exam">
+                    <div>第&nbsp;{{1}}&nbsp;次治疗<span>&nbsp;&nbsp;{{"莫旗人民医院"}}&nbsp;&nbsp;</span>{{"2017年7月3日"}}</div>
+                    <ul>
+                        <li class="active">
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="family-list horizontal">
+                <div class="list-wrapper phy-exam">
+                    <div>第&nbsp;{{1}}&nbsp;次治疗<span>&nbsp;&nbsp;{{"莫旗人民医院"}}&nbsp;&nbsp;</span>{{"2017年7月3日"}}</div>
+                    <ul>
+                        <li class="active">
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="fupin-bar">
             <p class="per-title">医疗费用报销明细</p>

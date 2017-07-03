@@ -1411,25 +1411,31 @@
                             });*/
                             var $pop = $.jBox('', { title: name, buttons: {}, border: 0, opacity: 0.4 });
                             document.getElementsByTagName('body')[0].style.padding = "0";
-                            $pop.find("#jbox").css("top", "2.6vw");
+                            $pop.find("#jbox").css({
+                                            "top": "50%",
+                                            "left": "50%",
+                                            "transform": "translate(-50%,-50%)"
+                                    });
                             if (text == "首页") {
                                 getHelpPoor(userId, 1);
                                 //绑定图片放大事件
-                                $(".physexam-record img").viewer();
+                                // $(".physexam-record img").viewer();
                                 //绑定家庭成员点击事件
-                                $pop.find(".per-mid tbody").on("click", "tr", function() {
-                                    var member = $(this).children("td").eq(0).text();
-                                    var memberId = $(this).attr("id");
-                                    var $popOther = $.jBox('', { title: member, buttons: {}, border: 0, opacity: 0.4 });
-                                    document.getElementsByTagName('body')[0].style.padding = "0";
-                                    $popOther.find("#jbox").css("top", "2.6vw");
-                                    getHelpPoor(memberId, 2);
-                                    //绑定图片放大事件
-                                    $popOther.find(".physexam-record img").viewer();
-                                })
+                                $pop.find("#familyMem").on("click", "li", function() {
+                                    var $this=$(this);
+                                    var splitLine =$this.find(".split-line");
+                                    var activeBool=splitLine.hasClass("active");
+                                    //家庭成员id
+                                    var memberId = splitLine.attr("data-id");
+                                    if(!activeBool){
+                                        splitLine.addClass("active");
+                                        $this.siblings("li").find(".split-line").removeClass("active");       
+                                    }else{
+                                        return false;
+                                    }
+                                });
                             } else if (text == "首页111111111111111111") {
                                 console.log(userId);
-
                                 $.get("http://moqi.test.grdoc.org/api/people/detail?id=" + userId, function(res) {
                                     document.getElementsByClassName('jbox-content')[1].innerHTML = template('personalTemp', res.data);
                                     // chart.barChart("fupinBar", ["住房保障","产业扶持","生态扶持","教育扶持","政策兜底"], [0, 0, 0, 0,0], true);
@@ -1487,7 +1493,7 @@
                      * index 第几个弹窗
                      */
                     function getHelpPoor(id, index) {
-                        //获取扶贫卡数据
+                        //获取健康卡数据
                         $.ajaxSettings.async=false;
                         $.get("http://moqi.test.grdoc.org/api/poverty_relief_card/detail?id=" +id, function(res) {
                             res.data.level = res.data.illness[0]?res.data.illness[0].illness_level:"";

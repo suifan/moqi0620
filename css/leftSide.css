@@ -452,7 +452,7 @@ span.span-active {
     float: left;
     /*background: red;*/
     width: 38vw;
-    height: 42vw;
+    height: 43.2vw;
     padding: 0 2vw;
     border-right: 3px dotted #2b59ab;
 }
@@ -468,7 +468,7 @@ span.span-active {
     float: left;
     /*background: blue;*/
     width: 31.4vw;
-    height: 100%;
+    height: 43.2vw;
     padding: 0 1vw;
     /*overflow: auto;*/
 }
@@ -482,13 +482,13 @@ span.span-active {
     border-radius: 3px;
 }
 .per-right.card section {
-    height: 10.6vw;
+    height: 9vw;
 }
-.per-right.card .help-method {
-    height: 7.6vw;
+.per-right.card .cure-sec {
+    height: 10.2vw;
 }
 .cure-plan {
-    margin-top: 1vw;
+    margin-top: .3vw;
 }
 .cure-title {
     display: inline-block;
@@ -570,7 +570,7 @@ span.span-active {
     margin-top: .5vw;
     overflow: hidden;
 }
-/*扶贫卡家庭成员切换*/
+/*健康卡家庭成员切换*/
 .family-list.horizontal>div {
     float: left;
 }
@@ -578,35 +578,82 @@ span.span-active {
     width: 4%;
     background: red;
     height: 5.6vw;
+    cursor: pointer;
+}
+.family-list.horizontal .left-switch {
+    background: url(../images/icons/left_icon.png) no-repeat center center;
+    background-size: 40%;
+}
+.family-list.horizontal .right-switch {
+    background: url(../images/icons/right_icon.png) no-repeat center center;
+    background-size: 40%;
 }
 .family-list.horizontal li {
     width: 24.4%;
-    height: 5.6vw;
-    background: #fff;
+/*    height: 5.6vw;
+    background: #fff;*/
     margin: 0;
-    cursor: auto;
+    cursor: pointer;
+    /*overflow: hidden;*/
+}
+.horizontal .avatar {
+    height: 4.8vw;
+    /*overflow: hidden;*/
+}
+.horizontal .avatar-wrap {
+    height: 4vw;
+    width: 4vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 2vw;
+    overflow: hidden;
+}
+.horizontal .avatar-wrap {
+    margin: 0;
+    width: 100%;
+}
+.horizontal .fam-member-name{
+    text-align: center;
+    font-size: .8vw;    
+}
+.family-list .split-line {
+    height: 5px;
+    background: none;
+}
+.family-list .split-line.active {
+    background: #fff;
 }
 .horizontal .list-wrapper {
     width: 92%;
 }
-.family-mem-info {
-    margin-top: .6vw;
+.split-line {
+    width: 100%
+}
+.fam-member-info {
+    margin-top: .4vw;
     overflow: hidden;
     font-size: .7vw;
 }
-.family-mem-info .item{
+.fam-member-info .item{
     width: 38%;
     float: left;
 }
-.family-mem-info .last{
+.fam-member-info .last{
     width: 20%;
     margin-left: 2%;
 }
-/*扶贫卡 五人小组名单*/
+/*健康卡 五人小组名单*/
+.family-list.five {
+    margin-top: .5vw;
+    overflow-y: auto;
+    height: 8vw;
+}
 .five-list>div {
     float: left;
     height: 3vw;
-    padding: .6vw;
+    padding: .4vw;
     /*background: red;*/
 }
 .five-list .img {
@@ -653,6 +700,35 @@ span.span-active {
     margin-right: .4vw;
     background: #1bf725;
 }
+/*五人小组名单end*/
+/*健康状况start*/
+.family-mem-info.health {
+    margin-top: .6vw;
+    overflow: hidden;
+    font-size: .8vw;
+}
+.family-mem-info.health .item{
+    width: 34%;
+    display: inline-block;
+    /* margin-left: 1%; */
+    vertical-align: top;
+    float: none;
+}
+.family-mem-info.health .last{
+    width: 28%;
+    margin-left: 1%;
+}
+.list-wrapper.phy-exam li {
+    width: 24.2%;
+    height: 5vw;
+    margin-top: .3vw;
+}
+/*健康状况end*/
+/*治疗过程start*/
+.cure-sec {
+    height: 20vw;
+}
+/*治疗过程end*/
 .thin th,.family-list table th {
     background: #21427e;
 }
@@ -692,13 +768,14 @@ article h6 {
     overflow: auto;
 }
 .per-right.card section:nth-child(1) {
-    height: 21vw;
+    height: 8vw;
 }
 .per-right.card section:nth-child(3) {
-    height: 10vw;
+    height: 8vw;
 }
 .per-right .fupin-bar {
     height: 8.6vw;
+    margin-top: .4vw;
 }
 .per-right .profit-bar {
     height: 15.4vw;
