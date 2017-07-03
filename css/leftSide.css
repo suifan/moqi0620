@@ -634,14 +634,14 @@ span.span-active {
 .fam-member-info {
     margin-top: .4vw;
     overflow: hidden;
-    font-size: .8vw;
+    font-size: .7vw;
 }
 .fam-member-info .item{
-    width: 38%;
+    width: 36%;
     float: left;
 }
 .fam-member-info .last{
-    width: 20%;
+    width: 24%;
     margin-left: 2%;
 }
 /*健康卡 五人小组名单*/
