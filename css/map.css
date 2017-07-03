@@ -362,17 +362,25 @@
     z-index: 300;
     display: none;
  }
- .map-goBack span{
-    position: absolute;
+.map-top-num{
+    position: fixed;
+    right:36vw;
+    top:9vw;
 
-    bottom: 0;
-    width: 100%; 
-    left:0;
-    font-size: 80%;
-    text-align: center;
+    font-size: 60%;
 
- }
-
+    z-index: 300;
+   
+}   
+.map-top-num>p{
+    color:#67c3fa;
+    font-size: 14px;
+  
+}
+.map-top-num span{
+    color:#02ede9;
+    padding:0 1vw;
+}
 
 
  .hPshenglicunSvg{
