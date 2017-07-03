@@ -6,7 +6,7 @@ require.config({
 define(['echarts'], function(echarts) {
     /**
      * 首页-致贫原因情况-饼图
-     * 有legend 有label
+     * 有labelPiegend 有label
      * @param id 容器id
      * @param chartData 数据
      * @param label 是否显示中间固定的label
@@ -206,6 +206,46 @@ define(['echarts'], function(echarts) {
                             color: '#fff'
                         },
                         formatter: "{b}{c}人"
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: true,
+                        lineStyle: {
+                            color: '#fff'
+                        }
+                    }
+                },
+                data: pieData.data
+            }]
+        });
+        resize_window(labelPieChart);
+    };
+
+    var labelPie2 = function(id, pieData) {
+        var labelPieChart = echarts.init(document.getElementById(id))
+        labelPieChart.setOption({
+            tooltip: {
+                trigger: 'item',
+                formatter: "{b}<br/>{c}万元<br/>{d}%"
+            },
+            color: pieData.color,
+            series: [{
+                type: 'pie',
+                center: pieData.center || ["60%", "70%"],
+                radius: pieData.radius || ['35%', '60%'],
+                avoidLabelOverlap: true,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'outside',
+                        textStyle: {
+                            color: '#fff'
+                        },
+                        formatter: "{b}\n{c}万元"
                     },
                     emphasis: {
                         show: true
@@ -1029,6 +1069,7 @@ define(['echarts'], function(echarts) {
         'pieChart': pieChart,
         'gauge': gauge,
         'labelPie': labelPie,
+        'labelPie2': labelPie2,
         'fullPieChart': fullPieChart,
         'xBarChart': xBarChart,
         'legendPie': legendPie,

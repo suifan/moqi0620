@@ -588,65 +588,43 @@
             },
             //产业扶贫相关方法
             "getProduction": function() {
-                
-                
-
                 //左侧
                 $('#leftSide').html(template('productionLeftSideTemp', {}));
-
-                var poverty = {
-                    legend: townNameList,
-                    color: ['#ffcf02', '#00a7f8', '#157dd0', '#f87309', '#a4a5a6', '#ffc200', '#157dd0', '#54b645', '#155c94', '#b35c24', '#a27f00', '#f87309', '#a4a5a6', '#ffc200', '#157dd0', '#54b645', '#155c94', '#b35c24', '#a27f00'],
-                    center: ["50%", "30%"],
-                    radius: ["25%", "45%"],
-                    data: [
-                        { value: 802, name: '尼尔基镇' },
-                        { value: 325, name: '红彦镇' },
-                        { value: 331, name: '宝山镇' },
-                        { value: 369, name: '西瓦尔图镇' },
-                        { value: 219, name: '塔温敖宝镇' },
-                        { value: 384, name: '腾克镇' },
-                        { value: 478, name: '巴彦鄂温克民族乡' },
-                        { value: 114, name: '阿拉尔镇' },
-                        { value: 299, name: '哈达阳镇' },
-                        { value: 178, name: "拉杜尔鄂温克民族乡" },
-                        { value: 252, name: "汉古尔河镇" },
-                        { value: 147, name: "奎勒河镇" },
-                        { value: 123, name: "库如奇乡" },
-                        { value: 364, name: "登特科办事处" },
-                        { value: 309, name: "额尔和办事处" },
-                        { value: 204, name: "坤密尔提办事处" },
-                        { value: 179, name: "卧罗河办事处" },
-                    ],
-                    total: "3356"
-                };
-                // charts.legendPie("productionTotalChart", poverty);
+                        var diseaseStructure = {
+                        color: ['#fdb601', ' #289ee8', '#77d950'],
+                        center: ["50%", "45%"],
+                        radius: ["35%", "50%"],
+                        data: [
+                          
+                            { value: 2500, name: '三到村三到户资金' },
+                            { value: 750, name: '市本级产业扶贫资金' },
+                            { value: 1900, name: '农业开发资金' }   
+                        ],
+                    };
+                    charts.labelPie2("productionMoneyChart", diseaseStructure);
                 //左侧 end
-
                 //右侧 start
                 $('#rightSide').html(template('productionRightSideTemp', {}));
-
                 //右侧 end
                 charts.youChart("productionNumChart");
-
                 //中间 start
-                $('#centerSide').html(template('productionCenterSideTemp', {}));
-                var shouYiData = {
-                    title: '每户预计收益成效',
-                    xNames: ['种植养殖', '龙头企业合作社', '电商扶贫', '光伏扶贫'],
-                    data: [0.5, 0.3, 0.2, 0.2],
-                    pointName: '收益万元数'
-                };
-                charts.centerChart("productionYieldChart", shouYiData);
+                // $('#centerSide').html(template('productionCenterSideTemp', {}));
+                // var shouYiData = {
+                //     title: '每户预计收益成效',
+                //     xNames: ['种植养殖', '龙头企业合作社', '电商扶贫', '光伏扶贫'],
+                //     data: [0.5, 0.3, 0.2, 0.2],
+                //     pointName: '收益万元数'
+                // };
+                // charts.centerChart("productionYieldChart", shouYiData);
 
-                var touZiData = {
-                    title: '资金投入',
-                    xNames: ['种植养殖', '龙头企业合作社', '电商扶贫', '光伏扶贫'],
-                    data: [1874.36, 700, 500, 26600],
-                    pointName: '投资数'
-                };
+                // var touZiData = {
+                //     title: '资金投入',
+                //     xNames: ['种植养殖', '龙头企业合作社', '电商扶贫', '光伏扶贫'],
+                //     data: [1874.36, 700, 500, 26600],
+                //     pointName: '投资数'
+                // };
 
-                charts.centerChart("productionInvestChart", touZiData);
+                // charts.centerChart("productionInvestChart", touZiData);
                 //中间 end
                 // 底部 start
                 $(".bottom").show().html(template('productionBottomTemp', {}));

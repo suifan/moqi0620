@@ -1025,6 +1025,22 @@ table tr:nth-child(even) td{
     height:7vw;
 }
 
+/*产业扶贫*/
+
+#productionMoneyChart{
+ height: 11vw;
+ width: 100%;
+}
+.productionMoneyChartDiv{
+   /*  background: rgba(255,255,255,.1);*/
+margin: 0 .3vw;
+ position: relative;
+}
+.productionMoneyChartDiv span {
+    position: absolute;
+    top: 41%;
+    left: 45%;
+ }
 .goverment-help .bottom-title{
     text-align: center;
     margin: 0vw 0 2vw 0;

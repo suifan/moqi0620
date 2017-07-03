@@ -368,14 +368,13 @@
     top:9vw;
 
     font-size: 60%;
-
     z-index: 300;
    
 }   
 .map-top-num>p{
     color:#67c3fa;
     font-size: 14px;
-  
+   
 }
 .map-top-num span{
     color:#02ede9;
@@ -403,12 +402,12 @@
     display: none;
  }
  .quitHp-btn{
-    position: fixed;
+    position: fixed; 
     right: 1vw;
     top:1vw;  
     background-color: #000;
     padding:0.5vw;
-    cursor: pointer;
+    cursor: pointer; 
  }
 
 .hp-container{

@@ -570,7 +570,7 @@ select {
 }
 
 .three-Circle{
-    display: table;
+display: table;
    width: 100%;
 }
 
@@ -634,13 +634,13 @@ select {
     width: 5vw;
     height: 5vw;
     background: url(../images/bg_blue_cir.png) no-repeat;
-    background-size: 100%;
+    background-size: 95%;
 }
 .three-Circle>.green>.no-border>div{
     width: 5vw;
     height: 5vw;
     background: url(../images/bg_gree_cir.png) no-repeat;
-    background-size: 100%;
+    background-size: 95%;
 }
 .three-Circle>.blue>div{
   border:3px solid #289ee8;
