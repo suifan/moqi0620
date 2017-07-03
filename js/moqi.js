@@ -607,7 +607,7 @@
             },
             //产业扶贫相关方法
             "getProduction": function() {
-                mapApi.mapPlay("none");
+                
                 
 
                 //左侧
@@ -639,7 +639,7 @@
                     ],
                     total: "3356"
                 };
-                charts.legendPie("productionTotalChart", poverty);
+                // charts.legendPie("productionTotalChart", poverty);
                 //左侧 end
 
                 //右侧 start
@@ -841,7 +841,7 @@
                 } else if ($(this).hasClass("production")) { //产业扶贫
                     $(".bottom").show();
                     $(".mapBox").show();
-                    $('#centerSide').show();
+                    // $('#centerSide').show();
                     $("#leftSide").show();
                     $("#rightSide").show();
                     api.getProduction();
