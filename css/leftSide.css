@@ -361,7 +361,7 @@ span.span-active {
 }
 .per-top>div {
     height: 12.6vw;
-    padding: 0 1.4vw;
+    padding: 0 1vw;
     float: left;
     line-height: 1.4vw;
 }
@@ -410,7 +410,7 @@ span.span-active {
 }
 /*checkbox组件样式---end*/
 .per-btm,.per-mid {
-    margin-top: .7vw;
+    margin-top: .3vw;
 }
 
 .per-btm article p{
@@ -437,7 +437,7 @@ span.span-active {
     width: 38%;
 }
 .per-top div:nth-child(3).help {
-    width: 15%;
+    width: 24%;
 }
 .per-right .per-top div:nth-child(2) {
     width: 18%;
@@ -452,7 +452,7 @@ span.span-active {
     float: left;
     /*background: red;*/
     width: 38vw;
-    height: 43.2vw;
+    height: 44.2vw;
     padding: 0 2vw;
     border-right: 3px dotted #2b59ab;
 }
@@ -467,7 +467,7 @@ span.span-active {
 .per-right.card {
     float: left;
     /*background: blue;*/
-    width: 31.4vw;
+    width: 34.6vw;
     height: 43.2vw;
     padding: 0 1vw;
     /*overflow: auto;*/
@@ -589,7 +589,7 @@ span.span-active {
     background-size: 40%;
 }
 .family-list.horizontal li {
-    width: 24.4%;
+    width: 24.2%;
 /*    height: 5.6vw;
     background: #fff;*/
     margin: 0;
@@ -610,7 +610,7 @@ span.span-active {
     border-radius: 2vw;
     overflow: hidden;
 }
-.horizontal .avatar-wrap {
+.horizontal .avatar-wrap img{
     margin: 0;
     width: 100%;
 }
@@ -634,7 +634,7 @@ span.span-active {
 .fam-member-info {
     margin-top: .4vw;
     overflow: hidden;
-    font-size: .7vw;
+    font-size: .8vw;
 }
 .fam-member-info .item{
     width: 38%;
@@ -649,6 +649,10 @@ span.span-active {
     margin-top: .5vw;
     overflow-y: auto;
     height: 8vw;
+}
+.five-list {
+    overflow: hidden;
+    margin: .4vw 0;
 }
 .five-list>div {
     float: left;
@@ -687,7 +691,7 @@ span.span-active {
     float: right;
 }
 .five-list .state {
-    width: 18vw;
+    width: 16vw;
     /* background: #fff; */
     margin-left: .8vw;
 }
@@ -1003,8 +1007,8 @@ table tr:nth-child(even) td{
 }
 
 #basicBuilding .content>div{
-    background: rgba(255,255,255,.1);
-    height:13vw;
+    /*background: rgba(255,255,255,.1);*/
+    height: 14.5vw;
 }
 .whiteBg{
     background: rgba(255,255,255,.1);
@@ -1012,10 +1016,14 @@ table tr:nth-child(even) td{
     height:12vw;
 }
 #buzhidao .content>div{
-    height:8vw;
+    height:10vw;
 }
 #productionTotalChart,#fallbackTotalChart,#fallbackNumChart {
     height: 33.8vw;
+    width: 100%;
+}
+#productionTotalChart{
+     height: 5vw;
     width: 100%;
 }
 /*兜底扶贫*/
@@ -1042,7 +1050,7 @@ table tr:nth-child(even) td{
 }
 
 #buzhidao .team{
-    background: url(../images/basicBuild.png) no-repeat;
+    background: url(../images/government_basic.png) no-repeat;
     background-size: 97%;
     height: 12vw;
     width: 24vw;
@@ -1050,46 +1058,42 @@ table tr:nth-child(even) td{
 }
 #buzhidao .team span{
     position: absolute;
-    top: 5.7vw;
+    top: 7.7vw;
+    left: .4vw;
     display: inline-block;
     width: 4vw;
     text-align: center;
 }
-#buzhidao .team .blue{
-    color: #67c7fc;
+#buzhidao .team .two{
+    left: 5.8vw;
 }
-#buzhidao .team .red{
-    color: #fda179;
-    left: 4.4vw;
-}
-#buzhidao .team .green{
-    color: #a2fc6c;
-    left: 8.8vw;
+#buzhidao .team .three{
+    left: 12.8vw;
     font-size: 1vw;
 }
-#buzhidao .team .yellow{
-    color: #f8ec04;
-    left: 13.2vw;
+#buzhidao .team .four{
+    left: 18.2vw;
 }
 
-#satisfactionChart{
-    height: 6vw;
-    width: 6vw;
-    top: 2vw;
-    left: 17.5vw;
-}
+/*#satisfactionChart{*/
+    /*height: 6vw;*/
+    /*width: 6vw;*/
+    /*top: 2vw;*/
+    /*left: 17.5vw;*/
+/*}*/
 
 #supervision .content>div,
 #helpPower .content>div{
     display: flex;
     justify-content: center;
-    height:7.5vw;
+    height: 8.2vw;
 }
 
 #supervision .content>div>div,
 #helpPower .content>div>div{
     width:7vw;
     text-align: center;
+    height:100%;
 
 }
 
@@ -1098,9 +1102,25 @@ table tr:nth-child(even) td{
     height:7vw;
 }
 
+/*产业扶贫*/
+
+#productionMoneyChart{
+ height: 11vw;
+ width: 100%;
+}
+.productionMoneyChartDiv{
+   /*  background: rgba(255,255,255,.1);*/
+margin: 0 .3vw;
+ position: relative;
+}
+.productionMoneyChartDiv span {
+    position: absolute;
+    top: 41%;
+    left: 45%;
+ }
 .goverment-help .bottom-title{
     text-align: center;
-    margin: 0vw 0 2vw 0;
+    margin: 0 0 2vw 0;
     font-size: 1vw;
 }
 .goverment-help .top-title{
@@ -1117,4 +1137,42 @@ table tr:nth-child(even) td{
 .target select{
     float:right;
     margin-right: 1vw;
+}
+
+.special_progress .progressBar{
+   width: 15.2vw;
+}
+.special_progress .content>div{
+    height: 2.3vw;
+    line-height: 2.3vw;
+}
+
+.target_chart{
+    height:15vh;
+    width:7vw;
+    position: absolute;
+}
+.target .content{
+    text-align: center;
+}
+.target .content>div{
+    text-align: center;
+    width: 7.3vw;
+    position: relative;
+    height: 21vh;
+    display: inline-block;
+}
+.target .content>div p{
+    line-height: 1.5vw;
+    white-space: nowrap;
+}
+.chartLabel{
+    margin-top: 5vh;
+}
+
+.target .chartLabel p{
+    font-size:.8vw;
+}
+.target .chartLabel p:first-child{
+    font-size:1.8vw;
 }

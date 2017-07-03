@@ -76,7 +76,7 @@ header select{
 
 #countDownDiv{
     height: 3vw;
-    width: 34vw;
+    width: 36.5vw;
     margin-left: auto;
     top: 5.1vw;
     letter-spacing: .1vw;
@@ -153,7 +153,7 @@ header select{
     line-height: 1.5vw;
 }
 .section .content{
-    padding:.8vw;
+    padding: 1.3vw;
 }
 .section select{
     background-color: #1b9deb;
@@ -180,15 +180,15 @@ header select{
 color: #eceef3;
     font-weight: normal;
     font-size: 1.1vw;
-    margin-left: 1vw;
+    margin-left: .7vw;
     border-left: 3px solid #1b9deb;
     padding-left: 8px;
 }
-section .header .orange_title{
+.section .header .orange_title{
     border-color: #ec6941;
 }
 
-section .header .green_title{
+.section .header .green_title{
     border-color: #8fc31f;
 }
 
@@ -196,9 +196,12 @@ img{
     width:94%;
     margin:3%;
 }
+div{
+    box-sizing: border-box;
+}
 
-.section .header .goToDetail{
-    background: url(../images/goToDetailV2.png) 2.7vw 0.7vw no-repeat;
+ .goToDetail{
+    background: url(../images/goToDetailV2.png) 2.7vw .1vw no-repeat;
     height: 2vw;
     width: 2.5vw;
     padding-right: 1vw;
@@ -209,7 +212,6 @@ img{
     font-size: 1vw;
     color: #9ba8c0;
     margin-right: .5vw;
-    line-height: 2.3vw;
 }
 
 .section .header .sectionTab{
@@ -271,7 +273,7 @@ img{
     display: inline-block;
     position: relative;
     width: 4.5vw;
-    height: .6vw;
+    height: .4vw;
 }
 .progressBar .progressBarBg{
     background: #c1c1c1;
@@ -384,6 +386,7 @@ table.blueTable tbody tr:last-child td{
     font-size: 1vw;
 }
 #jbox .jbox-title-panel {
+    height: 40px !important;
     background: #2b59ab;
     width: 74vw;
     /*border: 1px solid #4b86f0;*/
@@ -393,8 +396,8 @@ table.blueTable tbody tr:last-child td{
     border-top: 1px solid #4b86f0;
 }
 #jbox-content {
-    width: 76vw;
-    padding: 1.4vw 0;
+    width: 74vw;
+    padding: 1vw 0;
     background: #0e1a33;
     text-align: left;
 }
@@ -566,12 +569,122 @@ select {
   border-left: 3px solid #F29E27;
 }
 
+.three-Circle{
+display: table;
+   width: 100%;
+}
+
+.three-Circle div{
+    display: table-cell;
+    text-align: center;
+    vertical-align:middle;
+    overflow: hidden;
+   /* width: 8.6vw;*/
+    width: 6.2vw;
+    height: 6.2vw;
+   
+
+}
+
+
+/*蓝色*/
+.blue,.blue .progress_rate,.blue p,.blue span{
+    color:#1b9deb;
+}
+/*橙色*/
+.orange,.orange .progress_rate,.orange p,.orange span{
+    color: #f19149;
+}
+/*绿色*/
+.green,.green .progress_rate,.green p,.green span{
+    color: #74db46;
+}
+/*青色*/
+.light_blue,.light_blue .progress_rate,.light_blue p,.light_blue span{
+    color: #46dbdb;
+}
+/*深黄*/
+.dark_yellow,.dark_yellow .progress_rate,.dark_yellow p,.dark_yellow span{
+    color:#ffb400;
+}
+/*浅黄*/
+.yellow,.yellow .progress_rate,.yellow p,.yellow span{
+    color:#ffff00;
+}
+/*红色*/
+.red,.red p,.red span{
+    color: #ec6941;
+}
+.dark_green,.dark_green p,.dark_green span{
+    color: #8fc31f;
+}
 
 
 
+.three-Circle>div>div{
+  display: block;
+  margin:1vw auto ;
+  border:3px solid #289ee8;
+  border-radius: 50%;
+}
 
 
+.three-Circle>div>div>div>span{
+    display: inline-block;
+    border-left:1px solid #77d950;
+}
+.three-Circle>div>div>div>span:first-child{
+    border-left:none;
+}
 
+.three-Circle>.blue>.no-border>div{
+    width: 5vw;
+    height: 5vw;
+    background: url(../images/bg_blue_cir.png) no-repeat;
+    background-size: 95%;
+}
+.three-Circle>.green>.no-border>div{
+    width: 5vw;
+    height: 5vw;
+    background: url(../images/bg_gree_cir.png) no-repeat;
+    background-size: 95%;
+}
+.three-Circle>.blue>div{
+  border:3px solid #289ee8;
+}
+.three-Circle>.blue *{
+ color:#289ee8;
+}
+.three-Circle>.green>div{
+  border:3px solid #77d950;
+}
+.three-Circle>.green *{
+ color:#77d950;
+}
+.three-Circle>.orange>div{
+  border:3px solid #f29147
+}
+.three-Circle>.orange *{
+ color:#f29147
+}
+.three-Circle>.red>div{
+  border:3px solid #ec6b3e
+}
+.three-Circle>.red *{
+ color:#ec6b3e
+}
+.three-Circle>.yellow>div{
+  border:3px solid #fdb601;
+}
+.three-Circle>.yellow *{
+ color: #fdb601
+}
+.three-Circle>div>.no-border{
+  padding-top:0.5vw;
+  padding-left:0.5vw;
+  background-color:none;
+  border:none;
+}
 
 
 

@@ -6,7 +6,7 @@ require.config({
 define(['echarts'], function(echarts) {
     /**
      * 首页-致贫原因情况-饼图
-     * 有legend 有label
+     * 有labelPiegend 有label
      * @param id 容器id
      * @param chartData 数据
      * @param label 是否显示中间固定的label
@@ -225,6 +225,46 @@ define(['echarts'], function(echarts) {
         resize_window(labelPieChart);
     };
 
+    var labelPie2 = function(id, pieData) {
+        var labelPieChart = echarts.init(document.getElementById(id))
+        labelPieChart.setOption({
+            tooltip: {
+                trigger: 'item',
+                formatter: "{b}<br/>{c}万元<br/>{d}%"
+            },
+            color: pieData.color,
+            series: [{
+                type: 'pie',
+                center: pieData.center || ["60%", "70%"],
+                radius: pieData.radius || ['35%', '60%'],
+                avoidLabelOverlap: true,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'outside',
+                        textStyle: {
+                            color: '#fff'
+                        },
+                        formatter: "{b}\n{c}万元"
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: true,
+                        lineStyle: {
+                            color: '#fff'
+                        }
+                    }
+                },
+                data: pieData.data
+            }]
+        });
+        resize_window(labelPieChart);
+    };
+
     var legendPie = function(id, pieData) {
         var legendPie = echarts.init(document.getElementById(id))
         legendPie.setOption({
@@ -277,6 +317,64 @@ define(['echarts'], function(echarts) {
         });
         resize_window(legendPie);
     };
+    /**
+     * 首页的饼图
+     */
+
+    var colorPie = function(id, color,pieData) {
+        var legendPie = echarts.init(document.getElementById(id))
+        legendPie.setOption({
+            series: [{
+                name: '值',
+                type: 'pie',
+                clockWise: true, //顺时加载
+                hoverAnimation: false, //鼠标移入变大
+                radius: ["89%","92%"],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: false,
+                        },
+                        borderWidth: 4,
+                        borderColor: color,
+
+                    }
+                },
+                data: [{
+                    value: 8
+                }, {
+                    value: 2,
+                    name: '',
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: false,
+                                position: "center"
+                            },
+                            labelLine: {
+                                show: false
+                            },
+                            color: color,
+                            borderColor: color,
+                            borderWidth: 0
+                        }
+
+                    }
+                }]
+            }, {
+                name: '白',
+                type: 'pie',
+                clockWise: false,
+                radius: ["95%", "96%"],
+                hoverAnimation: false,
+                data: [{
+                    value: 1
+                }]
+            },   ]
+        });
+        resize_window(legendPie);
+    };
+
     /**
      * 显示label和labelline饼图(针对健康扶贫右侧)
      * @param id : string 图表容器
@@ -1015,6 +1113,65 @@ define(['echarts'], function(echarts) {
         });
         resize_window(treeChart);
     };
+
+
+    /**
+     * 雷达图
+     * @param id : string 图表容器
+     * @param pieData : object
+     * @pieData.color : 颜色(可以为array)
+     * @pieData.data  : 数据
+     * @pieData.xAxisData : X轴坐标轴字段
+     */
+    var radarChart = function(id, data) {
+        var chart = echarts.init(document.getElementById(id));
+        chart.setOption({
+            color:["#00a0e9"],
+            radar: {
+                indicator: [
+                    { name: '自身发展动力不足', max: 6500,value:1000,percent:"50%"},
+                    { name: '因病', max: 16000,value:1000,percent:"50%"},
+                    { name: '缺劳力', max: 30000,value:1000,percent:"50%"},
+                    { name: '缺技术', max: 38000,value:1000,percent:"50%"},
+                    { name: '缺资金', max: 52000,value:1000,percent:"50%"},
+                    { name: '缺土地', max: 25000,value:1000,percent:"50%"},
+                    { name: '因学', max: 25000,value:1000,percent:"50%"},
+                    { name: '因灾', max: 25000,value:1000,percent:"50%"},
+                ],
+                splitLine:{
+                    lineStyle:{
+                        color:"#fff"
+                    }
+                },
+                splitNumber:4,
+                radius:'50%',
+                name:{
+                    formatter:function(value,indicator){
+                        console.log(value+","+indicator);
+                        return value+"\n"+indicator.value+"户"+" "+indicator.percent;
+                    }
+                }
+            },
+            series: [{
+                type: 'radar',
+                areaStyle: {
+                    normal: {
+                        color:"#7ecef4"
+
+                    }
+                },
+                data : [
+
+                    {
+                        value : data
+
+                    }
+                ]
+            }]
+        });
+        resize_window(chart);
+    };
+
     /**
      * 重置浏览器窗口图表随之变化
      * @param Chart 图表
@@ -1029,6 +1186,7 @@ define(['echarts'], function(echarts) {
         'pieChart': pieChart,
         'gauge': gauge,
         'labelPie': labelPie,
+        'labelPie2': labelPie2,
         'fullPieChart': fullPieChart,
         'xBarChart': xBarChart,
         'legendPie': legendPie,
@@ -1042,7 +1200,10 @@ define(['echarts'], function(echarts) {
         'treeChart': treeChart,
 
         'youChart': youChart,
-        'lineChart': lineChart
+        'lineChart': lineChart,
+
+        'radarChart':radarChart,
+        'colorPie':colorPie
 
     };
 });

@@ -24,6 +24,7 @@
      position: relative;
      overflow: hidden;
  }
+
  
   .map-tips {
      position: fixed;
@@ -349,29 +350,36 @@
     position: fixed;
     right:30vw;
     top:9vw;
-    width: 2vw;
-    height: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
     border:0.15vw solid rgba(111, 145, 204, 0.9);
     font-size: 60%;
     cursor: pointer;
    
-    background: url(../images/map_goback.png) no-repeat center top;
+    background: url(../images/map-goback.png) no-repeat center top;
     background-color: rgba(45, 63, 117, 0.87);
-    background-size: 80% 60%;
+    background-size: 70%;
     z-index: 300;
     display: none;
  }
- .map-goBack span{
-    position: absolute;
+.map-top-num{
+    position: fixed;
+    right:36vw;
+    top:9vw;
 
-    bottom: 0;
-    width: 100%; 
-    left:0;
-    font-size: 80%;
-    text-align: center;
-
- }
-
+    font-size: 60%;
+    z-index: 300;
+   
+}   
+.map-top-num>p{
+    color:#67c3fa;
+    font-size: 14px;
+   
+}
+.map-top-num span{
+    color:#02ede9;
+    padding:0 1vw;
+}
 
 
  .hPshenglicunSvg{
@@ -394,12 +402,12 @@
     display: none;
  }
  .quitHp-btn{
-    position: fixed;
+    position: fixed; 
     right: 1vw;
     top:1vw;  
     background-color: #000;
     padding:0.5vw;
-    cursor: pointer;
+    cursor: pointer; 
  }
 
 .hp-container{

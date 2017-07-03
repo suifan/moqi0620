@@ -68,52 +68,60 @@
         var api = {
             'getHomePage': function() {
                 //右侧--------------------start
-                $.getJSON("../js/json/homePage/dutyHost.json", function(data) {
-                    if (data) {
-                        $('#rightSide').html(template('homepageRightSideTemp', data[area]));
-                        //进度条生成
-                        $("#performance").find(".progressBar").each(function() {
-                            var percent = $(this).find(".progressRate").text();
-                            if (percent.substr(-1) !== "%") {
-                                percent = percent.slice(0, -1) + "%";
-                            }
-                            progressBar.generate($(this), percent);
-                        });
-                    }
-                    $(".command").viewer();
-                    $(".management").viewer();
-                })
+                // $.getJSON("../js/json/homePage/dutyHost.json", function(data) {
+                    // if (data) {
+                        $('#rightSide').html(template('homepageRightSideTemp', {}));
+                        charts.radarChart("poorReason",[5000, 14000, 28000, 31000, 42000, 21000,20000,10000])
+                    // }
+
+                // })
                 $("#rightSide").on("click", "div", function() {
                     if ($(this).attr("id") == "performance") {
                         $(".government").trigger("click");
                     }
                 });
+                $("#workStatistics").find("select").on("change",function(){
+                    if($(this).val()==0){
+                        $(".help_data_title").show();
+                        $(".policy_title").hide();
+                        $(".help_data").show();
+                        $(".policy").hide();
+
+
+                    }else{
+                        $(".help_data_title").hide();
+                        $(".policy_title").show();
+                        $(".help_data").hide();
+                        $(".policy").show();
+
+                    }
+
+                })
                 //右侧--------------------end
 
                 //左侧--------------------start
+                $('#leftSide').html(template('homepageLeftSideTemp', {}));
+                $('.target .content').html(template('targetAndComplete', {}));
+                charts.colorPie("notPoorFamilyChart","#1b9deb",{})
+                charts.colorPie("notPoorPeopleChart","#74db46",{})
+                charts.colorPie("projectChart","#46dbdb",{})
+                charts.colorPie("fundChart","#ffb400",{})
+                charts.colorPie("preciseChart","#f19149",{})
+                charts.colorPie("onlineChart","#ec6941",{})
+                charts.colorPie("incomeChart","#ffff00",{})
+                charts.colorPie("populationChart","#8fc31f",{})
+                //左侧--------------------end
                 //获取首页左侧数据
-                $.ajaxSettings.async = false;
-                var dataLeft = {},
-                    targetChart = {};
-                $.getJSON("../js/json/homePage/basicInfoV2.json", function(res) {
-                    dataLeft['basicInfo'] = res.basic_info[area];
+
+                //进度条生成
+                $(".special_progress").find(".progressBar").each(function() {
+                    var percent = $(this).parent().find(".progress_rate").text();
+                    if (percent.substr(-1) !== "%") {
+                        percent = percent.slice(0, -1) + "%";
+                    }
+                    progressBar.generate($(this), percent);
                 });
-                $.getJSON("../js/json/homePage/targetV2.json", function(res) {
-                    targetChart = res.overcome_poverty_aim[area].aim;
-                });
-                $('#leftSide').html(template('homepageLeftSideTemp', dataLeft));
-                var chartData = {};
-                chartData.color = ["#1fa9f4", "#0cb871"];
-                chartData.yAxisData = [2017, 2018, 2019];
-                //数据更改，暂时写死 --bytlw 20170608
-                var people = [],
-                    family = [];
-                for (var i = 0, length = targetChart.length; i < length; i++) {
-                    family.push(targetChart[i].house_num);
-                    people.push(targetChart[i].person_num);
-                }
-                chartData.data = [{ name: "目标户数", type: "bar", data: [1900,1900,1109], barMaxWidth: 10 }, { name: "目标人数", type: "bar", data: [4580,4580,2974], barMaxWidth: 10 }]
-                charts.xBarChart("targetChart", chartData)
+
                 //左侧--------------------end
                 //底部--------------------start
                 $('.bottom').html(template('povertyStatus', {}));
@@ -217,14 +225,14 @@
             },
             'getGovernment': function() {
                 $("#leftSide").html(template('governmentTemp_left', {}));
-                chart.pieChart("satisfactionChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '100',"分");
-                chart.pieChart("attendanceChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '100',"分");
-                chart.pieChart("resumptionChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '100', "分");
-                chart.pieChart("disciplineChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '100', '分');
+                chart.pieChart("satisfactionChart", "#1b9deb", "#1b9deb","#fff",[{ "value": 100 }], '100',"%");
+                chart.pieChart("attendanceChart", "#1b9deb", "#1b9deb","#fff", [{ "value": 100 }], '100',"%");
+                chart.pieChart("resumptionChart", "#1b9deb", "#1b9deb","#fff", [{ "value": 100 }], '100', "分");
+                chart.pieChart("disciplineChart", "#1b9deb", "#1b9deb", "#fff",[{ "value": 100 }], '100', '分');
                 $("#rightSide").html(template('governmentTemp_right', {}));
-                chart.pieChart("secretaryChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '220', '人');
-                chart.pieChart("workTeamChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '55', "支");
-                chart.pieChart("cadreChart", "#1b9deb", "#1b9deb", [{ "value": 100 }], '1322', '人');
+                chart.pieChart("secretaryChart", "#1b9deb", "#1b9deb","#fff", [{ "value": 100 }], '220', '人');
+                chart.pieChart("workTeamChart", "#1b9deb", "#1b9deb", "#fff",[{ "value": 100 }], '55', "支");
+                chart.pieChart("cadreChart", "#1b9deb", "#1b9deb","#fff", [{ "value": 100 }], '1322', '人');
                 $('.bottom').html(template('governmentTemp_bottom', {}));
                 $(".command").viewer();
                 // bottomBind();
@@ -607,65 +615,43 @@
             },
             //产业扶贫相关方法
             "getProduction": function() {
-                mapApi.mapPlay("none");
-                
-
                 //左侧
                 $('#leftSide').html(template('productionLeftSideTemp', {}));
-
-                var poverty = {
-                    legend: townNameList,
-                    color: ['#ffcf02', '#00a7f8', '#157dd0', '#f87309', '#a4a5a6', '#ffc200', '#157dd0', '#54b645', '#155c94', '#b35c24', '#a27f00', '#f87309', '#a4a5a6', '#ffc200', '#157dd0', '#54b645', '#155c94', '#b35c24', '#a27f00'],
-                    center: ["50%", "30%"],
-                    radius: ["25%", "45%"],
-                    data: [
-                        { value: 802, name: '尼尔基镇' },
-                        { value: 325, name: '红彦镇' },
-                        { value: 331, name: '宝山镇' },
-                        { value: 369, name: '西瓦尔图镇' },
-                        { value: 219, name: '塔温敖宝镇' },
-                        { value: 384, name: '腾克镇' },
-                        { value: 478, name: '巴彦鄂温克民族乡' },
-                        { value: 114, name: '阿拉尔镇' },
-                        { value: 299, name: '哈达阳镇' },
-                        { value: 178, name: "拉杜尔鄂温克民族乡" },
-                        { value: 252, name: "汉古尔河镇" },
-                        { value: 147, name: "奎勒河镇" },
-                        { value: 123, name: "库如奇乡" },
-                        { value: 364, name: "登特科办事处" },
-                        { value: 309, name: "额尔和办事处" },
-                        { value: 204, name: "坤密尔提办事处" },
-                        { value: 179, name: "卧罗河办事处" },
-                    ],
-                    total: "3356"
-                };
-                charts.legendPie("productionTotalChart", poverty);
+                        var diseaseStructure = {
+                        color: ['#fdb601', ' #289ee8', '#77d950'],
+                        center: ["50%", "45%"],
+                        radius: ["35%", "50%"],
+                        data: [
+                          
+                            { value: 2500, name: '三到村三到户资金' },
+                            { value: 750, name: '市本级产业扶贫资金' },
+                            { value: 1900, name: '农业开发资金' }   
+                        ],
+                    };
+                    charts.labelPie2("productionMoneyChart", diseaseStructure);
                 //左侧 end
-
                 //右侧 start
                 $('#rightSide').html(template('productionRightSideTemp', {}));
-
                 //右侧 end
                 charts.youChart("productionNumChart");
-
                 //中间 start
-                $('#centerSide').html(template('productionCenterSideTemp', {}));
-                var shouYiData = {
-                    title: '每户预计收益成效',
-                    xNames: ['种植养殖', '龙头企业合作社', '电商扶贫', '光伏扶贫'],
-                    data: [0.5, 0.3, 0.2, 0.2],
-                    pointName: '收益万元数'
-                };
-                charts.centerChart("productionYieldChart", shouYiData);
+                // $('#centerSide').html(template('productionCenterSideTemp', {}));
+                // var shouYiData = {
+                //     title: '每户预计收益成效',
+                //     xNames: ['种植养殖', '龙头企业合作社', '电商扶贫', '光伏扶贫'],
+                //     data: [0.5, 0.3, 0.2, 0.2],
+                //     pointName: '收益万元数'
+                // };
+                // charts.centerChart("productionYieldChart", shouYiData);
 
-                var touZiData = {
-                    title: '资金投入',
-                    xNames: ['种植养殖', '龙头企业合作社', '电商扶贫', '光伏扶贫'],
-                    data: [1874.36, 700, 500, 26600],
-                    pointName: '投资数'
-                };
+                // var touZiData = {
+                //     title: '资金投入',
+                //     xNames: ['种植养殖', '龙头企业合作社', '电商扶贫', '光伏扶贫'],
+                //     data: [1874.36, 700, 500, 26600],
+                //     pointName: '投资数'
+                // };
 
-                charts.centerChart("productionInvestChart", touZiData);
+                // charts.centerChart("productionInvestChart", touZiData);
                 //中间 end
                 // 底部 start
                 $(".bottom").show().html(template('productionBottomTemp', {}));
@@ -841,7 +827,7 @@
                 } else if ($(this).hasClass("production")) { //产业扶贫
                     $(".bottom").show();
                     $(".mapBox").show();
-                    $('#centerSide').show();
+                    // $('#centerSide').show();
                     $("#leftSide").show();
                     $("#rightSide").show();
                     api.getProduction();
