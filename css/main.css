@@ -614,6 +614,9 @@ display: table;
 .red,.red p,.red span{
     color: #ec6941;
 }
+.dark_green,.dark_green p,.dark_green span{
+    color: #8fc31f;
+}
 
 
 

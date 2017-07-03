@@ -106,6 +106,10 @@
                 charts.colorPie("notPoorPeopleChart","#74db46",{})
                 charts.colorPie("projectChart","#46dbdb",{})
                 charts.colorPie("fundChart","#ffb400",{})
+                charts.colorPie("preciseChart","#f19149",{})
+                charts.colorPie("onlineChart","#ec6941",{})
+                charts.colorPie("incomeChart","#ffff00",{})
+                charts.colorPie("populationChart","#8fc31f",{})
                 //左侧--------------------end
                 //获取首页左侧数据
 
