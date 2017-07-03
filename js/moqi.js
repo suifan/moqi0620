@@ -71,11 +71,12 @@
                 // $.getJSON("../js/json/homePage/dutyHost.json", function(data) {
                     // if (data) {
                         $('#rightSide').html(template('homepageRightSideTemp', {}));
+
+                        charts.radarChart("poorReason",[5000, 14000, 28000, 31000, 42000, 21000,20000,10000])
                 $(".fileOne").viewer();
                 $(".file2").viewer({navbar: true});
                 $(".file3").viewer({navbar: true});
                 $(".file4").viewer({navbar: true});
-                        charts.radarChart("poorReason",[5000, 14000, 28000, 31000, 42000, 21000,20000,10000])
                     // }
 
                 // })
@@ -90,6 +91,7 @@
                         $(".policy_title").hide();
                         $(".help_data").show();
                         $(".policy").hide();
+
 
 
                     }else{
@@ -121,9 +123,9 @@
                 });
 
                 //底部--------------------start
-                $('.bottom').html(template('povertyStatus', {}));
+                // $('.bottom').html(template('povertyStatus', {}));
                 //底部按钮点击事件
-                $(".bottom-head").on("click", function() {
+                /*$(".bottom-head").on("click", function() {
                     var $this = $(this).siblings(".bottom-content");
                     $this.slideToggle(function() {
                         var showBool = $this.is(":visible");
@@ -139,9 +141,9 @@
                             api.getPovertyDistribution();
                         }
                     });
-                });
+                });*/
                 //贫困状况切换标题
-                $(".bottom-header ul").on("click", "li", function() {
+                /*$(".bottom-header ul").on("click", "li", function() {
                     var activeBool = $(this).hasClass("click-active");
                     if (!activeBool) {
                         $(this).addClass("click-active");
@@ -152,7 +154,7 @@
                             api.getPovertyCauses();
                         }
                     }
-                });
+                });*/
                 //底部--------------------end
             },
             'getTarget':function(){

@@ -1180,27 +1180,3 @@ margin: 0 .3vw;
     font-size:1.8vw;
 }
 
-/*new!!!*/
-.policy{
-    display: none;
-}
-.policyItem{
-    position: relative;
-    display: inline-block;
-    margin: .6vw;
-}
-.policyItem>img{
-    width:6vw;
-}
-.policyItem ul{
-    opacity:0;
-    position: absolute;
-    width: 6vw;
-    left: .7vw;
-    height: 8.5vw;
-    top: 0.7vw;
-}
-.file2,.file3,.file4{
-    z-index:100;
-}
-/*new!!!*/
