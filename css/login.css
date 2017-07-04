@@ -1,0 +1,51 @@
+.body_bg{
+    background: url(../images/login_bg.png) no-repeat center center;
+    -webkit-background-size: 100%;
+    height: 100vh;
+}
+
+.login{
+    width: 22vw;
+    text-align: center;
+    margin:0 auto;
+    padding-top: 26vh;
+}
+
+
+.login h2{
+    color: #fff;
+    font-weight:normal;
+    margin-bottom: 5vw;
+    letter-spacing: .2vw;
+    font-size: 1.6vw;
+}
+
+.login input{
+    display: block;
+    background: url(../images/login_icon.png) no-repeat 0.5vw .6vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    width: 19.5vw;
+    padding: .5vw 1vw .5vw 2.2vw;
+    height: 3vh;
+    margin-bottom: 1vw;
+    font-size: 1.3vw;
+    background-size: 7%;
+}
+
+#password{
+    background-position: 0.5vw -2vw;
+}
+
+.login button{
+    background: rgba(0,48,100,.6);
+    color: #fff;
+    width: 22.5vw;
+    padding: 1vw;
+    border-radius: 4vw;
+    border: 1px solid #1b9deb;
+    margin-top: 2vw;
+}
