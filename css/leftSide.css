@@ -361,7 +361,7 @@ span.span-active {
     font-size: .8vw;
 }
 .per-top>div {
-    height: 12.6vw;
+    height: 11.6vw;
     padding: 0 .4vw;
     float: left;
     line-height: 1.4vw;
@@ -373,11 +373,12 @@ span.span-active {
     line-height: 1.2vw;
 }
 .check-container {
-    padding: .8vw;
+    padding-top: .8vw;
+    overflow: hidden;
 }
 .check-container>div {
     float: left;
-    margin: .2vw 1.4vw;
+    margin: .2vw .2vw;
 }
 /*checkbox组件样式---start*/
 .check-container .chk_1:checked + label {
@@ -508,7 +509,7 @@ span.span-active {
     margin: 0 auto;
     border-radius: 3vw;
     overflow: hidden;
-    margin-top: 1.1vw;
+    /*margin-top: 1.1vw;*/
 }
 .per-lefttop div.per-img img {
     width: 19.6vw;
@@ -521,10 +522,10 @@ span.span-active {
     font-size: 1vw;
 }
 .per-leftmid ul {
-    margin-top: 1.2vw;
+    /*margin-top: 1.2vw;*/
 }
 .per-leftbtm ul {
-    margin-top: 1.2vw;
+    /*margin-top: 1.2vw;*/
 }
 .per-leftbtm .btn {
     text-align: center;
@@ -625,7 +626,7 @@ span.span-active {
     font-size: .8vw;    
 }
 .family-list .split-line {
-    height: 5px;
+    height: 4px;
     background: none;
 }
 .family-list .split-line.active {
@@ -760,7 +761,8 @@ span.span-active {
     background: #21427e;
 }
 .per-btm p,.per-mid p,.per-right p {
-    margin-bottom: 0.6vw;
+    margin-bottom: .4vw;
+    margin-top: .4vw;
 }
 .artical-img div {
     display: inline-block;
@@ -973,7 +975,7 @@ table tr:nth-child(even) td{
 
 
 .per-title{
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: bold;
     text-shadow: 1px 1px 1px #000;
     color: #e5ecec;

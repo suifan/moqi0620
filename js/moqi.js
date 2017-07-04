@@ -1458,7 +1458,7 @@
                                     $pop.find("#familyMem").on("click", "li", function() {
                                         var $this=$(this);
                                         var splitLine =$this.find(".split-line");
-                                        var activeBool=splitLine.hasClass("active");
+                                        var activeBool =splitLine.hasClass("active");
                                         //家庭成员id
                                         var memberId = splitLine.attr("data-id");
                                         if(!activeBool){
