@@ -1397,15 +1397,29 @@
                             });*/
                             var $pop = $.jBox('', { title: name, buttons: {}, border: 0, opacity: 0.4 });
                             document.getElementsByTagName('body')[0].style.padding = "0";
-                            $pop.find("#jbox").css({
-                                            "top": "50%",
-                                            "left": "50%",
-                                            "transform": "translate(-50%,-50%)"
-                                    });
+                            // $pop.find("#jbox").css({
+                            //                 "top": "50%",
+                            //                 "left": "50%",
+                            //                 "transform": "translate(-50%,-50%)"
+                            //         });
                             if (text == "首页") {
                                 getHelpPoor(userId, 1);
                                 //绑定图片放大事件
                                 // $(".physexam-record img").viewer();
+                                //家庭成员左右切换
+                                $('#familyMem').kxbdSuperMarquee({
+                                    isAuto:false,
+                                    distance:106,
+                                    btnGo:{right:'#leftBtn',left:'#rightBtn'},
+                                    direction:'right'
+                                });
+                                // 体检表左右切换
+                                $('#phyExam').kxbdSuperMarquee({
+                                    isAuto:false,
+                                    distance:101,
+                                    btnGo:{right:'#examLeftBtn',left:'#examRightBtn'},
+                                    direction:'right'
+                                });
                                 //绑定家庭成员点击事件
                                 $pop.find("#familyMem").on("click", "li", function() {
                                     var $this=$(this);
