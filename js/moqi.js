@@ -1432,24 +1432,34 @@
                                     btnGo:{right:'#examLeftBtn',left:'#examRightBtn'},
                                     direction:'right'
                                 });
-                                //绑定家庭成员点击事件
-                                $pop.find("#familyMem").on("click", "li", function() {
-                                    var $this=$(this);
-                                    var splitLine =$this.find(".split-line");
-                                    var activeBool=splitLine.hasClass("active");
-                                    //家庭成员id
-                                    var memberId = splitLine.attr("data-id");
-                                    if(!activeBool){
-                                        splitLine.addClass("active");
-                                        $this.siblings("li").find(".split-line").removeClass("active");       
-                                    }else{
-                                        return false;
-                                    }
-                                });
+                                
                             } else if (text == "首页") {
                                 console.log(userId);
                                 $.get("http://moqi.test.grdoc.org/api/people/detail?id=" + userId, function(res) {
                                     document.getElementsByClassName('jbox-content')[1].innerHTML = template('personalTemp', res.data);
+                                    //家庭成员左右切换
+                                    $('#familyMem').kxbdSuperMarquee({
+                                        isAuto:false,
+                                        distance:106,
+                                        btnGo:{right:'#leftBtn',left:'#rightBtn'},
+                                        direction:'right'
+                                    });
+
+                                    //绑定家庭成员点击事件
+                                    // $pop.find("#familyMem .split-line").eq(0).addClass("active");
+                                    $pop.find("#familyMem").on("click", "li", function() {
+                                        var $this=$(this);
+                                        var splitLine =$this.find(".split-line");
+                                        var activeBool=splitLine.hasClass("active");
+                                        //家庭成员id
+                                        var memberId = splitLine.attr("data-id");
+                                        if(!activeBool){
+                                            splitLine.addClass("active");
+                                            $this.siblings("li").find(".split-line").removeClass("active");       
+                                        }else{
+                                            return false;
+                                        }
+                                    });
                                     // chart.barChart("fupinBar", ["住房保障","产业扶持","生态扶持","教育扶持","政策兜底"], [0, 0, 0, 0,0], true);
                                     // chart.barChart("profitBar", ["自主经营性收入","政策性补贴收入"], [0, 0], true);
                                     //家庭收入
@@ -1514,6 +1524,21 @@
                             var cardHtml = template('helpCardTemp', res.data);
                             // console.log(res.data.physical_exam_records);
                             document.getElementsByClassName('jbox-content')[index].innerHTML = cardHtml;
+                            //绑定家庭成员点击事件
+                            // $pop.find("#familyMem .split-line").eq(0).addClass("active");
+                            $pop.find("#familyMem").on("click", "li", function() {
+                                var $this=$(this);
+                                var splitLine =$this.find(".split-line");
+                                var activeBool=splitLine.hasClass("active");
+                                //家庭成员id
+                                var memberId = splitLine.attr("data-id");
+                                if(!activeBool){
+                                    splitLine.addClass("active");
+                                    $this.siblings("li").find(".split-line").removeClass("active");       
+                                }else{
+                                    return false;
+                                }
+                            });
                         });
                     }
 

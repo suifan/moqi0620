@@ -3809,7 +3809,7 @@
     <script id="personalTemp" type="text/html">
         <div class="per-left">
             <div class="per-top">
-                <div class="per-lefttop">
+                <div class="per-lefttop help">
                     {{if !avatar}}
                     <div class="per-img">
                         <img src="../images/default_head_img.png">
@@ -3819,31 +3819,101 @@
                         <img src="">
                     </div>
                     {{/if}}
-                    <p>{{name}}</p>
+                    <p class="name">{{"你是谁"}}</p>
+                    <p>年收入（元）</p>
+                    <p class="annual-money">{{"222222"}}</p>
                 </div>
                 <div class="per-leftmid">
                     <ul>
-                        <li>性别：<span>{{sex}}</span></li>
-                        <li>电话：<span>{{phone}}</span></li>
-                        <li>所属村：<span>{{village}}</span></li>
-                        <li>民族：<span>{{nation}}</span></li>
-                        <li>健康情况：<span>{{health}}</span></li>
-                        <li>劳动能力：<span>{{labor}}</span></li>
-                        <li>家庭人数：<span>{{people_num}}</span></li>
+                        <li>性别：{{gender}}</li>
+                        <li>民族：{{gender}}</li>
+                        <li>所属村：<span>{{age}}</span></li>
+                        <li>健康状况：<span>{{"长期慢性病"}}</span></li>
+                        <li>主要贫困原因：<span>{{"因病"}}</span></li>
+                        <li>身份证号：<span>{{idnum}}</span></li>
+                        <li>银行卡号：<span>{{idnum}}</span></li>
                     </ul>
                 </div>
                 <div class="per-leftbtm">
                     <ul>
-                        <li>身份证号：<span>{{idnum}}</span></li>
-                        <li>银行卡号：<span>{{bank_card_id}}</span></li>
-                        <li>贫困属性：<span>{{poor_property}}</span></li>
-                        <li>脱贫属性：<span>{{poverty_over_property}}</span></li>
-                        <li>主要致(返)贫原因：<span>{{poor_reason}}</span></li>
-                        <li>
-                            <p>年收入（元）</p>
-                            <p class="annual-money">{{income}}</p>
-                        </li>
+                        <li>劳动能力：<span>{{"普通劳动力"}}</span></li>
+                        <li>手机号：<span>{{phone}}</span></li>
+                        <li>家庭成员：<span>{{people_num}}</span></li>
+                        <li>贫困属性：<span>{{"低保贫困户"}}</span></li>
+                        <li class="btn"><span>进入贫困卡</span></li>
+                        <li class="btn"><span>查看详细信息</span></li>
                     </ul>
+                </div>
+            </div>
+            <div class="per-mid">
+                <p class="per-title">家庭成员({{8}}位)</p>
+                <div style="width: 100%; background: #fff; height:3px;"></div>
+                <div class="family-list horizontal">
+                    <div id="leftBtn" class="button left-switch"></div>
+                    <div id = "familyMem" class="list-wrapper">
+                        <ul>
+                            <li data-id="1">
+                                <div class="avatar">
+                                    <div class="avatar-wrap">
+                                        <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1440083631,2443886313&fm=58&bpow=505&bpoh=690" alt="">
+                                    </div>
+                                </div>
+                                <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                                <div class="split-line active"></div>
+                            </li>
+                            <li data-id="1">
+                                <div class="avatar">
+                                    <div class="avatar-wrap">
+                                        <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1440083631,2443886313&fm=58&bpow=505&bpoh=690" alt="">
+                                    </div>
+                                </div>
+                                <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                                <div class="split-line"></div>
+                            </li>
+                            <li data-id="1">
+                                <div class="avatar">
+                                    <div class="avatar-wrap">
+                                        <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1440083631,2443886313&fm=58&bpow=505&bpoh=690" alt="">
+                                    </div>
+                                </div>
+                                <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                                <div class="split-line"></div>
+                            </li>
+                            <li data-id="1">
+                                <div class="avatar">
+                                    <div class="avatar-wrap">
+                                        <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1440083631,2443886313&fm=58&bpow=505&bpoh=690" alt="">
+                                    </div>
+                                </div>
+                                <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                                <div class="split-line"></div>
+                            </li>
+                            <li data-id="1">
+                                <div class="avatar">
+                                    <div class="avatar-wrap">
+                                        <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1440083631,2443886313&fm=58&bpow=505&bpoh=690" alt="">
+                                    </div>
+                                </div>
+                                <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
+                                <div class="split-line"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="rightBtn" class="button right-switch"></div>
+                </div>
+                <div class="fam-member-info">
+                    <div class="item">姓名：{{"张三丰"}}</div>
+                    <div class="item">家庭住址：{{"北京市朝阳区八里庄街道晨练中心256号楼"}}</div>
+                    <div class="item">身份证：{{146736767483736256}}</div>
+                    <div class="item">民族：{{"汉"}}</div>
+                    <div class="item last">户人口：{{5}}</div>
+                    <div class="item">健康状况：{{"长期慢性病"}}</div>
+                    <div class="item">劳动能力：{{"普通"}}</div>
+                    <div class="item last">文化程度：{{"小学"}}</div>
+                    <div class="item">务工时间：{{"3个月"}}</div>
+                    <div class="item">工作种类：{{"普通工人"}}</div>
+                    <div class="item last">工作状态：{{"务工/在校生"}}</div>
+                    <div class="item">扶贫方式：</div>
                 </div>
             </div>
             <div class="per-btm">
@@ -4009,7 +4079,7 @@
                                 </div>
                             </div>
                             <div class="fam-member-name">{{"张三丰"}}&nbsp;&nbsp;&nbsp;{{"户主"}}</div>
-                            <div class="split-line"></div>
+                            <div class="split-line active"></div>
                         </li>
                         <li data-id="1">
                             <div class="avatar">
