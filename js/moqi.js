@@ -173,6 +173,7 @@
                 $('#leftSide').html(template('relocateLeftTemp', {}));
                 $('#rightSide').html(template('relocateRightTemp', {}));
                 $('#budgetRelocate .content').html(template('budgetRelocateTemp', {}));
+                charts.colorPie("documentRelocateChart","#74db46",{})
                 /*// $("#whole").show().html(template('relocateTemp', {}));
                 // $(".bottom").show().html(template('rebuildTemp', {}));
                 var firstData = {

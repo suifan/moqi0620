@@ -1227,30 +1227,50 @@ margin: 0 .3vw;
 
 .relocate_charts>div{
     display: inline-block;
+    text-align: center;
+    height: 7.6vw;
+    vertical-align: top;
+    min-width: 6vw;
+    margin-left: 1.5vw;
 }
 .relocate_charts>div p{
-
+    margin-bottom: .6vw;
 }
 
 .round{
-
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    border: 3px solid;
+    padding-top: 29%;
+    text-align: center;
+}
+.green .round {
+    border-color: #74db46;
 }
 
 .round span{
-
+    display: inline-block;
+    width: 2vw;
+    text-align: center;
+    border-left: 1px solid;
+    line-height: 1.3vw;
 }
 .round span:first-child{
-
+    border-left: none;
 }
 .relocate_chart{
     position: relative;
 }
 .relocate_chart div{
-    height:10vh;
-    width:10vw;
+    height: 10vh;
+    width: 6vw;
+    position: absolute;
+    margin-top: 10%;
 }
 .relocate_chart span{
-    position: absolute;
+    margin-top: 5.5vh;
+    display: inline-block;
 }
 
 
