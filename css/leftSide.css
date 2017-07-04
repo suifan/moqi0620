@@ -411,6 +411,26 @@ span.span-active {
     vertical-align: text-top;
 }
 /*checkbox组件样式---end*/
+/*帮扶干部 组件样式---start*/
+.cadre-content>div {
+    display: inline-block;
+}
+.cadre-content-left>div {
+    width: 4.2vw;
+    height: 1.4vw;
+    background: #052343;
+    line-height: 1.4vw;
+    text-align: center;
+    margin-top: .4vw;
+}
+.cadre-content-left {
+    vertical-align: top;
+}
+.cadre-content-right p{
+    float: left;
+    width: 35%;
+}
+/*帮扶干部 组件样式---end*/
 .per-btm,.per-mid {
     margin-top: .3vw;
 }
