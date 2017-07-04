@@ -163,6 +163,11 @@ header select{
     background-position: 2.8vw -1.5vw;
     background-size: 51%;
 }
+
+.section .header select{
+    float: right;
+    margin-right: 1vw;
+}
 .section .section-body,.section .content{
     /*background: rgba(3, 19, 39, 0.52);*/
     /*border: 1px solid #43738e;*/
