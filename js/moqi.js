@@ -1,3 +1,4 @@
+
     /**
      * Created by Administrator on 2017/5/17.
      */
@@ -71,7 +72,12 @@
                 // $.getJSON("../js/json/homePage/dutyHost.json", function(data) {
                     // if (data) {
                         $('#rightSide').html(template('homepageRightSideTemp', {}));
+
                         charts.radarChart("poorReason",[5000, 14000, 28000, 31000, 42000, 21000,20000,10000])
+                $(".fileOne").viewer();
+                $(".file2").viewer({navbar: true});
+                $(".file3").viewer({navbar: true});
+                $(".file4").viewer({navbar: true});
                     // }
 
                 // })
@@ -88,6 +94,7 @@
                         $(".policy").hide();
 
 
+
                     }else{
                         $(".help_data_title").hide();
                         $(".policy_title").show();
@@ -101,17 +108,11 @@
 
                 //左侧--------------------start
                 $('#leftSide').html(template('homepageLeftSideTemp', {}));
-                $('.target .content').html(template('targetAndComplete', {}));
-                charts.colorPie("notPoorFamilyChart","#1b9deb",{})
-                charts.colorPie("notPoorPeopleChart","#74db46",{})
-                charts.colorPie("projectChart","#46dbdb",{})
-                charts.colorPie("fundChart","#ffb400",{})
-                charts.colorPie("preciseChart","#f19149",{})
-                charts.colorPie("onlineChart","#ec6941",{})
-                charts.colorPie("incomeChart","#ffff00",{})
-                charts.colorPie("populationChart","#8fc31f",{})
+                api.getTarget();
+                $(".target select").on("change",function(){
+                    api.getTarget();
+                })
                 //左侧--------------------end
-                //获取首页左侧数据
 
                 //进度条生成
                 $(".special_progress").find(".progressBar").each(function() {
@@ -122,11 +123,10 @@
                     progressBar.generate($(this), percent);
                 });
 
-                //左侧--------------------end
                 //底部--------------------start
-                $('.bottom').html(template('povertyStatus', {}));
+                // $('.bottom').html(template('povertyStatus', {}));
                 //底部按钮点击事件
-                $(".bottom-head").on("click", function() {
+                /*$(".bottom-head").on("click", function() {
                     var $this = $(this).siblings(".bottom-content");
                     $this.slideToggle(function() {
                         var showBool = $this.is(":visible");
@@ -142,9 +142,9 @@
                             api.getPovertyDistribution();
                         }
                     });
-                });
+                });*/
                 //贫困状况切换标题
-                $(".bottom-header ul").on("click", "li", function() {
+                /*$(".bottom-header ul").on("click", "li", function() {
                     var activeBool = $(this).hasClass("click-active");
                     if (!activeBool) {
                         $(this).addClass("click-active");
@@ -155,8 +155,19 @@
                             api.getPovertyCauses();
                         }
                     }
-                });
+                });*/
                 //底部--------------------end
+            },
+            'getTarget':function(){
+                $('.target .content').html(template('targetAndComplete', {}));
+                charts.colorPie("notPoorFamilyChart","#1b9deb",{})
+                charts.colorPie("notPoorPeopleChart","#74db46",{})
+                charts.colorPie("projectChart","#46dbdb",{})
+                charts.colorPie("fundChart","#ffb400",{})
+                charts.colorPie("preciseChart","#f19149",{})
+                charts.colorPie("onlineChart","#ec6941",{})
+                charts.colorPie("incomeChart","#ffff00",{})
+                charts.colorPie("populationChart","#8fc31f",{})
             },
             'getRelocate': function() {
                 $("#whole").show().html(template('relocateTemp', {}));
@@ -1164,6 +1175,7 @@
                 }
             },
             //进入二级地图
+            //进入二级地图
             "getSubMap": function(oSvg) {
 
                 $('#map-goBack').addClass('show');
@@ -1486,13 +1498,15 @@
                                 })
                             }
                         });
-                    };
+                    }
                     /**
                      * 获取扶贫卡数据
                      * id 用户id
                      * index 第几个弹窗
                      */
                     function getHelpPoor(id, index) {
+                        // var cardHtml = template('helpCardTemp', {});
+                        // return
                         //获取健康卡数据
                         $.ajaxSettings.async=false;
                         $.get("http://moqi.test.grdoc.org/api/poverty_relief_card/detail?id=" +id, function(res) {
@@ -1504,7 +1518,7 @@
                     }
 
                 });
-            }, //getSubmap
+            },  //getSubmap
             //切换地图公共方法 mapApi.showMap
             //传入地图 id
             "showMap": function(mapid) {
@@ -1593,3 +1607,4 @@
         //                 });
 
     });
+
