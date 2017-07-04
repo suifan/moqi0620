@@ -1228,7 +1228,7 @@
                     // var area = "西瓦尔图镇";
                     // var curr_path_name = "兴隆村";
                     //请求贫困家庭列表数据
-                     if (text == "首页") {
+                     if (text == "健康扶贫") {
                         if(event.target.parentNode.id=="shenglicun"){
                              $(".map-links").html(template("villageClickTemp", {}))
                              .css({
@@ -1255,7 +1255,7 @@
                             getHouseList(data,mapApi.curr_path_name);
                             // console.log(data);
                         });
-                    } else if (text == "首页11111111111***********************") {
+                    } else if (text == "首页") {
                         if(event.target.parentNode.id=="shenglicun"){
                              $(".map-links").html(template("villageClickTemp", {}))
                              .css({
@@ -1414,7 +1414,7 @@
                             //                 "left": "50%",
                             //                 "transform": "translate(-50%,-50%)"
                             //         });
-                            if (text == "首页") {
+                            if (text == "健康扶贫") {
                                 getHelpPoor(userId, 1);
                                 //绑定图片放大事件
                                 // $(".physexam-record img").viewer();
@@ -1446,7 +1446,7 @@
                                         return false;
                                     }
                                 });
-                            } else if (text == "首页111111111111111111") {
+                            } else if (text == "首页") {
                                 console.log(userId);
                                 $.get("http://moqi.test.grdoc.org/api/people/detail?id=" + userId, function(res) {
                                     document.getElementsByClassName('jbox-content')[1].innerHTML = template('personalTemp', res.data);
