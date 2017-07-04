@@ -170,8 +170,10 @@
                 charts.colorPie("populationChart","#8fc31f",{})
             },
             'getRelocate': function() {
-                $("#whole").show().html(template('relocateTemp', {}));
-                $(".bottom").show().html(template('rebuildTemp', {}));
+                $('#leftSide').html(template('relocateLeftTemp', {}));
+                $('#rightSide').html(template('relocateRightTemp', {}));
+                /*// $("#whole").show().html(template('relocateTemp', {}));
+                // $(".bottom").show().html(template('rebuildTemp', {}));
                 var firstData = {
                     color: '#57d454',
                     title: '总量：2908 户',
@@ -232,7 +234,7 @@
                             $(".bottom-head").addClass("active").find("img").attr("src", "../images/down_arrow.png")
                         }
                     });
-                });
+                });*/
             },
             'getGovernment': function() {
                 $("#leftSide").html(template('governmentTemp_left', {}));
@@ -824,7 +826,7 @@
 
                 }
                 //map 的显示隐藏
-                if (!$(this).hasClass("production")&&!$(this).hasClass("relocate")) {
+                if (!$(this).hasClass("production")) {
                     mapApi.mapPlay("block");
                     $('#centerSide').hide();
                 }
@@ -873,8 +875,10 @@
                     $(".bottom").show();
                     api.getfallback();
                 } else if ($(this).hasClass("relocate")) {
-                    $("#whole").show();
-                    $(".bottom").show();
+                    // $("#whole").show();
+                    // $(".bottom").show();
+                    $("#leftSide").show();
+                    $("#rightSide").show();
                     api.getRelocate();
                 }
             });
@@ -1285,17 +1289,21 @@
                         //modified for 党建点击村时，如果是胜利村则显示四条，其他则只显示两条 by tlw at 20170606 start
                         $(".map-links").html(template("mapPartyClickTemp", {}));
                         var committeeData={},workTeamData={};
-                        $.getJSON(" ../js/json/committee.json",function(res){committeeData=res});
-                        $.getJSON(" ../js/json/first_secretary.json",function(res){workTeamData=res});
+                        $.getJSON(" ../js/json/committee.json",function(res){
+                            committeeData=res;
+                            if(!committeeData[mapApi.curr_path_name]){
+                                $("#villageCadre").parent().hide();
+                            }
+                        });
+                        $.getJSON(" ../js/json/first_secretary.json",function(res){
+                            workTeamData=res;
+                            if(!workTeamData[mapApi.curr_path_name]){
+                                $("#workTeam").parent().hide();
+                            }
+                        });
                         if(event.target.parentNode.id!=="shenglicun"){
                             $("#partyHome").parent().hide();
                             $("#partyVillageClub").parent().hide();
-                        }
-                        if(!committeeData[mapApi.curr_path_name]){
-                            $("#villageCadre").parent().hide();
-                        }
-                        if(!workTeamData[mapApi.curr_path_name]){
-                            $("#workTeam").parent().hide();
                         }
                         $(".map-links").css({
                             "left": x - $('.map-links').width()/2,
