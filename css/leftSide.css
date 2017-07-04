@@ -1205,3 +1205,32 @@ margin: 0 .3vw;
     font-size:1.8vw;
 }
 
+.relocate_charts>div{
+    display: inline-block;
+}
+.relocate_charts>div p{
+
+}
+
+.round{
+
+}
+
+.round span{
+
+}
+.round span:first-child{
+
+}
+.relocate_chart{
+    position: relative;
+}
+.relocate_chart div{
+    height:10vh;
+    width:10vw;
+}
+.relocate_chart span{
+    position: absolute;
+}
+
+

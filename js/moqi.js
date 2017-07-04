@@ -172,6 +172,7 @@
             'getRelocate': function() {
                 $('#leftSide').html(template('relocateLeftTemp', {}));
                 $('#rightSide').html(template('relocateRightTemp', {}));
+                $('#budgetRelocate .content').html(template('budgetRelocateTemp', {}));
                 /*// $("#whole").show().html(template('relocateTemp', {}));
                 // $(".bottom").show().html(template('rebuildTemp', {}));
                 var firstData = {
